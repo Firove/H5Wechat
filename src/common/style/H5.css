@@ -13,4 +13,5 @@ body{
     background-color: #ddd;
     background-size: 100%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
