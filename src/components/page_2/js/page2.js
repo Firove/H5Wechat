@@ -10,7 +10,8 @@ function rotate() {
     });
     $('.h5_page_page2').click(anima);
     function anima() {
-        let num = 0;
+
+        // let num = 0;
         // let dtd = $.Deferred();
         // let complete = function(){
         //     num ++;
@@ -18,17 +19,20 @@ function rotate() {
         //         dtd.resolve();
         //     }
         // };
-        let last = position.pop();
-        position.unshift(last);
-        $aDiv.each(function (i) {
-            $(this).animate({
-                width: position[i][0],
-                height: position[i][1],
-                left: position[i][2],
-                top: position[i][3],
-                zIndex: position[i][4]
-            },600,'linear')
-        });
-        // return dtd.promise();
+        if($(".h5_page_page2 :animated").length <= 0) {
+
+            let last = position.pop();
+            position.unshift(last);
+            $aDiv.each(function (i) {
+                $(this).animate({
+                    width: position[i][0],
+                    height: position[i][1],
+                    left: position[i][2],
+                    top: position[i][3],
+                    zIndex: position[i][4]
+                }, 600, 'linear')
+            });
+            // return dtd.promise();
+        }
     }
 }

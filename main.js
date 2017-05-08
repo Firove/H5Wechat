@@ -225,7 +225,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '30%',
-                    right: '40%',
+                    left: '50%',
                     zIndex: '70'
                 },
                 width: '66',
@@ -237,7 +237,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '31%',
-                    right: '29%',
+                    left: '61%',
                     zIndex: '75'
                 },
                 width: '72',
@@ -249,7 +249,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '33%',
-                    right: '16%',
+                    left: '72.5%',
                     zIndex: '80'
                 },
                 width: '86',
@@ -261,7 +261,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '37%',
-                    right: '4%',
+                    left: '81%',
                     zIndex: '85'
                 },
                 width: '108',
@@ -273,7 +273,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '41%',
-                    right: '8%',
+                    left: '75%',
                     zIndex: '90'
                 },
                 width: '128',
@@ -285,7 +285,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '44%',
-                    right: '21%',
+                    left: '60%',
                     zIndex: '95'
                 },
                 width: '140',
@@ -296,7 +296,7 @@ $(function(){
                 css: {
                     fontSize: '1.3em',
                     position: 'relative',
-                    color: 'white',
+                    color: '#ffffff',
                     textAlign: 'center',
                     top: '78%'
                 }
