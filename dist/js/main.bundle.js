@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 22);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10446,7 +10446,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(13);
+	fixUrls = __webpack_require__(32);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -10708,6 +10708,12 @@ function updateLink(linkElement, options, obj) {
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "img/cfc92ab3.bg.png";
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -10715,16 +10721,17 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _H5ComponentBase = __webpack_require__(8);
+var _H5ComponentBase = __webpack_require__(23);
 
 var _H5ComponentBase2 = _interopRequireDefault(_H5ComponentBase);
 
-var _fullpage = __webpack_require__(11);
+var _fullpage = __webpack_require__(30);
 
 var _fullpage2 = _interopRequireDefault(_fullpage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import rotate from '../../components/page_1/js/page1.js';
 /* 内容管理对象 */
 exports.default = H5;
 
@@ -10806,6 +10813,7 @@ function H5() {
         this.el.fullpage({
             onLeave: function onLeave(index, nextIndex, direction) {
                 $(this).find('.h5_component').trigger('onLeave');
+                // rotate();
             },
             afterLoad: function afterLoad(anchorLink, index) {
                 $(this).find('.h5_component').trigger('onLoad');
@@ -10822,7 +10830,53 @@ function H5() {
 }
 
 /***/ }),
-/* 4 */
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+/**
+ * Created by 文利 on 2017/5/4.
+ */
+exports.default = rotate;
+
+function rotate() {
+    var position = [];
+    var $aDiv = $('.h5_page_page2 .h5_component:lt(13)');
+    $aDiv.each(function (i) {
+        position.push([$(this).width(), $(this).height(), $(this).css('left'), $(this).css('top'), $(this).css('zIndex')]);
+    });
+    $('.h5_page_page2').click(anima);
+    function anima() {
+        var num = 0;
+        // let dtd = $.Deferred();
+        // let complete = function(){
+        //     num ++;
+        //     if(num >= $aDiv.length){
+        //         dtd.resolve();
+        //     }
+        // };
+        var last = position.pop();
+        position.unshift(last);
+        $aDiv.each(function (i) {
+            $(this).animate({
+                width: position[i][0],
+                height: position[i][1],
+                left: position[i][2],
+                top: position[i][3],
+                zIndex: position[i][4]
+            }, 600, 'linear');
+        });
+        // return dtd.promise();
+    }
+}
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10844,7 +10898,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 	if ( true ) {
 
 		// AMD. Register as an anonymous module.
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(0), __webpack_require__(12) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(0), __webpack_require__(31) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -11564,13 +11618,91 @@ return $.widget;
 
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(9);
+var content = __webpack_require__(24);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./face.less", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./face.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(25);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./page1.less", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./page1.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(26);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./page2.less", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./page2.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(27);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11590,13 +11722,13 @@ if(false) {
 }
 
 /***/ }),
-/* 6 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(10);
+var content = __webpack_require__(28);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11616,21 +11748,111 @@ if(false) {
 }
 
 /***/ }),
-/* 7 */
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(29);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--1-1!../../../node_modules/postcss-loader/index.js!./base.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--1-1!../../../node_modules/postcss-loader/index.js!./base.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/af2dacde.face.png";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/fba9f79d.guiji.png";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/d8d397a5.huangguan.png";
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/f906e7b9.jiangbei.png";
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/6a5abd0b.xiezi.png";
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/bb2c089a.yiner.png";
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/4be60c5c.jiangbei.png";
+
+/***/ }),
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery_ui__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_H5ComponentBase_css__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_H5ComponentBase_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__src_common_style_H5ComponentBase_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_face_style_face_less__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_face_style_face_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__src_components_face_style_face_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_components_page_1_style_page1_less__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_components_page_1_style_page1_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__src_components_page_1_style_page1_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_components_page_2_style_page2_less__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_components_page_2_style_page2_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__src_components_page_2_style_page2_less__);
 /**
  * Created by 文利 on 2017/4/26.
  */
@@ -11641,26 +11863,319 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+
+
 window.jQuery = window.$ = __webpack_require__(0);
+
+
+
+
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
+    var face0 = __webpack_require__(13);
+    var face1 = __webpack_require__(14);
+
+    var page1_guiji = __webpack_require__(15);
+    var page1_xiezi = __webpack_require__(18);
+    var page1_yiner = __webpack_require__(19);
+    var page1_jiangbei = __webpack_require__(17);
+    var page1_huangguan = __webpack_require__(16);
+    var page2_jiangbei = __webpack_require__(21);
+    var home = __webpack_require__(20);
     var h5 = new __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js___default.a;
     h5
         .addPage('face')
-            .addComponent('bg',{
+            .addComponent('face',{
                 css: {
-                    width: '75%',
                     margin: '0 auto',
-                    backgroundSize:'cover',
-                    backgroundImage: 'url(./src/components/face/img/face.png)'
+                    backgroundSize:'contain',
+                    top: '6%'
                 },
+                width: '568',
+                height: '878',
+                bg: face0
             })
-    .loader();
+            .addComponent('go',{
+                css: {
+                    margin: '15% auto 0 auto',
+                    backgroundSize:'contain',
+
+                },
+                width: '483',
+                height: '101',
+                bg: face1
+            })
+        .addPage('page1')
+            .addComponent('guiji',{
+                bg: page1_guiji,
+                css: {
+                    backgroundSize:'100% 100%',
+                    top:'50%',
+                    marginTop: '-158px',
+                },
+                width: '100%',
+                height: '635',
+            })
+            .addComponent('xiezi',{
+                bg: page1_xiezi,
+                width: '479',
+                height: '456',
+                css: {
+                    position: 'absolute',
+                    backgroundSize:'contain',
+                    top: '42%',
+                    right: '0%',
+                    zIndex:'10',
+                    opacity:0
+                },
+                animateIn:{opacity:1,top: '42%', right: '0%',},
+                animateOut: {opacity:0,top: '42%', right: '0%',}
+             })
+            // .addComponent('empty',{
+            //     width: '137',
+            //     height: '182',
+            //     css: {
+            //         position: 'absolute',
+            //         top: '25%',
+            //         right: '10%',
+            //         zIndex:'10'
+            //     },
+            // })
+            .addComponent('yiner',{
+                bg: page1_yiner,
+                width: '137',
+                height: '182',
+                css: {
+                    position: 'absolute',
+                    backgroundSize:'contain',
+                    top: '20%',
+                    left: '30%',
+                    zIndex:'0',
+                    opacity:0
+                },
+                animateIn:{opacity:1,top: '20%',left: '30%'},
+                animateOut: {opacity:0,top: '20%',left: '30%'}
+            })
+            .addComponent('jiangbei',{
+                bg: page1_jiangbei,
+                width: '200',
+                height: '344',
+                css: {
+                    position: 'absolute',
+                    backgroundSize:'contain',
+                    top: '38%',
+                    left: '0%',
+                    zIndex:'10',
+                    opacity:0
+                },
+                animateIn:{opacity:1, top: '38%',left: '0%',},
+                animateOut: {opacity:0, top: '38%',left: '0%',}
+            })
+            .addComponent('huangguan',{
+                bg: page1_huangguan,
+                width: '441',
+                height: '293',
+                css: {
+                    position: 'absolute',
+                    backgroundSize:'100% 100%',
+                    top: '18%',
+                    left: '50%',
+                    marginLeft: '-110px',
+                    zIndex:'3',
+                    opacity: 0
+                },
+                animateIn:{opacity:1, top: '30%'},
+                animateOut: {opacity:0, top: '18%'}
+            })
+        .addPage('page2')
+            .addComponent('zhongjian',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '44%',
+                    left: '38%',
+                    // marginLeft: '-48px',
+                    zIndex: '100'
+
+                },
+                width: '192',
+                height: '328',
+            })
+            .addComponent('zuo1',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '44%',
+                    left: '21%',
+                    zIndex: '95'
+                },
+                width: '140',
+                height: '256',
+            })
+            .addComponent('zuo2',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '41%',
+                    left: '8%',
+                    zIndex: '90'
+                },
+                width: '128',
+                height: '244',
+            })
+            .addComponent('zuo3',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '37%',
+                    left: '4%',
+                    zIndex: '85'
+                },
+                width: '108',
+                height: '200',
+            })
+            .addComponent('zuo4',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '33%',
+                    left: '16%',
+                    zIndex: '80'
+                },
+                width: '86',
+                height: '160',
+            })
+            .addComponent('zuo5',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '31%',
+                    left: '29%',
+                    zIndex: '75'
+                },
+                width: '72',
+                height: '132',
+            })
+            .addComponent('zuo6',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '30%',
+                    left: '40%',
+                    zIndex: '70'
+                },
+                width: '66',
+                height: '122',
+            })
+            .addComponent('you6',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '30%',
+                    right: '40%',
+                    zIndex: '70'
+                },
+                width: '66',
+                height: '122',
+            })
+            .addComponent('you5',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '31%',
+                    right: '29%',
+                    zIndex: '75'
+                },
+                width: '72',
+                height: '132',
+            })
+            .addComponent('you4',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '33%',
+                    right: '16%',
+                    zIndex: '80'
+                },
+                width: '86',
+                height: '160',
+            })
+            .addComponent('you3',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '37%',
+                    right: '4%',
+                    zIndex: '85'
+                },
+                width: '108',
+                height: '200',
+            })
+            .addComponent('you2',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '41%',
+                    right: '8%',
+                    zIndex: '90'
+                },
+                width: '128',
+                height: '244',
+            })
+            .addComponent('you1',{
+                bg: page2_jiangbei,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '44%',
+                    right: '21%',
+                    zIndex: '95'
+                },
+                width: '140',
+                height: '256',
+            })
+            .addComponent('text',{
+                text: '2015-2016赛季NBA总冠军',
+                css: {
+                    fontSize: '1.3em',
+                    position: 'relative',
+                    color: 'white',
+                    textAlign: 'center',
+                    top: '78%'
+                }
+            })
+            .addComponent('home',{
+                bg: home,
+                height: '92',
+                width: '92',
+                css: {
+                    position: 'relative',
+                    backgroundSize: 'contain',
+                    margin: '0 auto',
+                    top:'83%'
+                }
+            })
+    .loader(3);
+    __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js___default()();
+
 });
 
 
 
 /***/ }),
-/* 8 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11703,7 +12218,7 @@ function H5ComponentBase(name, cfg) {
 
         setTimeout(function () {
             component.addClass(cls + '_load').removeClass(cls + '_leave');
-            cfg.animateIn && component.animate(cfg.animateIn);
+            cfg.animateIn && component.animate(cfg.animateIn, 600);
         }, cfg.delay || 0);
 
         return false;
@@ -11712,7 +12227,7 @@ function H5ComponentBase(name, cfg) {
 
         setTimeout(function () {
             component.addClass(cls + '_leave').removeClass(cls + '_load');
-            cfg.animateOut && component.animate(cfg.animateOut);
+            cfg.animateOut && component.animate(cfg.animateOut, 600);
         }, cfg.delay || 0);
         return false;
     });
@@ -11720,7 +12235,7 @@ function H5ComponentBase(name, cfg) {
 }
 
 /***/ }),
-/* 9 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -11728,13 +12243,13 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "/* H5对象的全局样式 */\nbody{\n    padding: 0;\n    margin: 0;\n}\n.h5{\n    height: 100%;\n}\n.h5_page{\n    position: relative;\n    width: 100%;\n    height: 100%;\n    background-color: #ddd;\n    background-size: 100%;\n    background-repeat: no-repeat;\n}\n", ""]);
+exports.push([module.i, ".h5_page_face {\n  background-color: #454545;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 10 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -11742,13 +12257,69 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "/* 基本图文组件样式 */\n.h5_component{\n    background-size: 100%;\n    background-repeat: no-repeat;\n    position: absolute;\n}", ""]);
+exports.push([module.i, ".h5_page_page1 {\n  background-image: url(" + __webpack_require__(3) + ");\n  background-size: cover;\n}\n.h5_page_page1 .h5_component_name_xiezi {\n  -webkit-animation-name: xiezi_move;\n          animation-name: xiezi_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes xiezi_move {\n  0% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  24% {\n    top: 13%;\n    right: -120px;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  48% {\n    top: 30%;\n    right: 46%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  60% {\n    top: 44%;\n    right: 70%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  80% {\n    top: 56%;\n    right: 46%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 10;\n  }\n  100% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n@keyframes xiezi_move {\n  0% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  24% {\n    top: 13%;\n    right: -120px;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  48% {\n    top: 30%;\n    right: 46%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  60% {\n    top: 44%;\n    right: 70%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  80% {\n    top: 56%;\n    right: 46%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 10;\n  }\n  100% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n.h5_page_page1 .h5_component_name_jiangbei {\n  -webkit-animation-name: jiangbei_move;\n          animation-name: jiangbei_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes jiangbei_move {\n  0% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  15% {\n    top: 30%;\n    left: 28%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  30% {\n    top: 30%;\n    left: 53%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  40% {\n    top: 38%;\n    left: 78%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  52% {\n    top: 42%;\n    left: 84%;\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8);\n    z-index: 0;\n  }\n  75% {\n    top: 52%;\n    left: 53%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  85% {\n    top: 45%;\n    left: 29%;\n    -webkit-transform: scale(1.5);\n            transform: scale(1.5);\n    z-index: 10;\n  }\n  100% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n@keyframes jiangbei_move {\n  0% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  15% {\n    top: 30%;\n    left: 28%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  30% {\n    top: 30%;\n    left: 53%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  40% {\n    top: 38%;\n    left: 78%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  52% {\n    top: 42%;\n    left: 84%;\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8);\n    z-index: 0;\n  }\n  75% {\n    top: 52%;\n    left: 53%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  85% {\n    top: 45%;\n    left: 29%;\n    -webkit-transform: scale(1.5);\n            transform: scale(1.5);\n    z-index: 10;\n  }\n  100% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n.h5_page_page1 .h5_component_name_yiner {\n  -webkit-animation-name: yiner_move;\n          animation-name: yiner_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes yiner_move {\n  0% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  13% {\n    top: 33%;\n    left: 58%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  23% {\n    top: 45%;\n    left: 82%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  33% {\n    top: 54%;\n    left: 82%;\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n    z-index: 0;\n  }\n  43% {\n    top: 68%;\n    left: 73%;\n    -webkit-transform: scale(1.8);\n            transform: scale(1.8);\n    z-index: 0;\n  }\n  53% {\n    top: 62%;\n    left: 58%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  68% {\n    top: 50%;\n    left: 29%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  83% {\n    top: 30%;\n    left: 10%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  100% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n}\n@keyframes yiner_move {\n  0% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  13% {\n    top: 33%;\n    left: 58%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  23% {\n    top: 45%;\n    left: 82%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  33% {\n    top: 54%;\n    left: 82%;\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n    z-index: 0;\n  }\n  43% {\n    top: 68%;\n    left: 73%;\n    -webkit-transform: scale(1.8);\n            transform: scale(1.8);\n    z-index: 0;\n  }\n  53% {\n    top: 62%;\n    left: 58%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  68% {\n    top: 50%;\n    left: 29%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  83% {\n    top: 30%;\n    left: 10%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  100% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 11 */
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".h5_page_page2 {\n  background-image: url(" + __webpack_require__(3) + ");\n  background-size: cover;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* H5对象的全局样式 */\nbody{\n    padding: 0;\n    margin: 0;\n}\n.h5{\n    height: 100%;\n}\n.h5_page{\n    position: relative;\n    width: 100%;\n    height: 100%;\n    background-color: #ddd;\n    background-size: 100%;\n    background-repeat: no-repeat;\n    overflow: hidden;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* 基本图文组件样式 */\n.h5_component{\n    background-size: 100%;\n    background-repeat: no-repeat;\n    position: relative;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "body,html {\r\n    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;\r\n    color: #ffffff;\r\n    letter-spacing: 2px;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -14880,7 +15451,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 12 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;( function( factory ) {
@@ -14906,7 +15477,7 @@ return $.ui.version = "1.12.1";
 
 
 /***/ }),
-/* 13 */
+/* 32 */
 /***/ (function(module, exports) {
 
 

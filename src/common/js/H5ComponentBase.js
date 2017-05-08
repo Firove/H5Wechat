@@ -31,7 +31,7 @@ function H5ComponentBase( name, cfg ) {
        
         setTimeout(function(){
             component.addClass(cls+'_load').removeClass(cls+'_leave');
-            cfg.animateIn && component.animate( cfg.animateIn );
+            cfg.animateIn && component.animate( cfg.animateIn ,600);
         },cfg.delay || 0)
 
         return false;
@@ -40,7 +40,7 @@ function H5ComponentBase( name, cfg ) {
 
         setTimeout(function(){
             component.addClass(cls+'_leave').removeClass(cls+'_load');
-            cfg.animateOut && component.animate( cfg.animateOut );
+            cfg.animateOut && component.animate( cfg.animateOut ,600);
          },cfg.delay || 0)
         return false;
     })

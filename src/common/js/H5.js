@@ -1,6 +1,7 @@
 /* 内容管理对象 */
 import H5ComponentBase from './H5ComponentBase.js';
 import fullpage from 'fullpage.js';
+// import rotate from '../../components/page_1/js/page1.js';
 export default H5;
 function H5( ) {
     this.id = ('h5_'+Math.random()).replace('.','_');
@@ -80,6 +81,7 @@ function H5( ) {
         this.el.fullpage({
             onLeave:function( index, nextIndex, direction) {
                 $(this).find('.h5_component').trigger('onLeave');
+                // rotate();
             },
             afterLoad:function( anchorLink, index ) {
                 $(this).find('.h5_component').trigger('onLoad');
