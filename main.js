@@ -10,6 +10,7 @@ import './src/common/style/H5.css';
 import './src/common/style/base.css';
 import './src/common/style/H5ComponentBase.css';
 import rotate from './src/components/page_2/js/page2.js';
+import './src/common/style/detail.less';
 
 window.jQuery = window.$ = require('jquery');
 import './src/components/face/style/face.less';
@@ -25,7 +26,19 @@ $(function(){
     var page1_yiner = require('./src/components/page_1/img/yiner.png');
     var page1_jiangbei = require('./src/components/page_1/img/jiangbei.png');
     var page1_huangguan = require('./src/components/page_1/img/huangguan.png');
-    var page2_jiangbei = require('./src/components/page_2/img/jiangbei.png');
+    var page2_jiangbei = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_left1 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_left2 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_left3 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_left4 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_left5 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_left6 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_right6 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_right5 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_right4 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_right3 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_right2 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_right1 = require('./src/components/page_2/img/jb_left1.png');
     var home = require('./src/components/page_2/img/home.png');
     var h5 = new H5;
     h5
@@ -34,20 +47,19 @@ $(function(){
                 css: {
                     margin: '0 auto',
                     backgroundSize:'contain',
-                    top: '6%'
+                    top: '6%',
+                    width:'28rem',
+                    height: '44rem'
                 },
-                width: '568',
-                height: '878',
                 bg: face0
             })
             .addComponent('go',{
                 css: {
                     margin: '15% auto 0 auto',
                     backgroundSize:'contain',
-
+                    width:'24rem',
+                    height: '5rem'
                 },
-                width: '483',
-                height: '101',
                 bg: face1
             })
         .addPage('page1')
@@ -56,22 +68,22 @@ $(function(){
                 css: {
                     backgroundSize:'100% 100%',
                     top:'50%',
-                    marginTop: '-158px',
+                    marginTop: '-15.8rem',
+                    height: '32rem',
                 },
                 width: '100%',
-                height: '635',
             })
             .addComponent('xiezi',{
                 bg: page1_xiezi,
-                width: '479',
-                height: '456',
                 css: {
                     position: 'absolute',
                     backgroundSize:'contain',
                     top: '42%',
                     right: '0%',
                     zIndex:'10',
-                    opacity:0
+                    opacity:0,
+                    width: '24rem',
+                    height: '23rem',
                 },
                 animateIn:{opacity:1,top: '42%', right: '0%',},
                 animateOut: {opacity:0,top: '42%', right: '0%',}
@@ -88,38 +100,40 @@ $(function(){
             // })
             .addComponent('yiner',{
                 bg: page1_yiner,
-                width: '137',
-                height: '182',
+
                 css: {
                     position: 'absolute',
                     backgroundSize:'contain',
                     top: '20%',
                     left: '30%',
                     zIndex:'0',
-                    opacity:0
+                    opacity:0,
+                    width: '7rem',
+                    height: '9rem',
                 },
                 animateIn:{opacity:1,top: '20%',left: '30%'},
                 animateOut: {opacity:0,top: '20%',left: '30%'}
             })
             .addComponent('jiangbei',{
                 bg: page1_jiangbei,
-                width: '200',
-                height: '344',
                 css: {
                     position: 'absolute',
                     backgroundSize:'contain',
                     top: '38%',
                     left: '0%',
                     zIndex:'10',
-                    opacity:0
+                    opacity:0,
+                    width: '10rem',
+                    height: '17rem'
                 },
                 animateIn:{opacity:1, top: '38%',left: '0%',},
-                animateOut: {opacity:0, top: '38%',left: '0%',}
+                animateOut: {opacity:0, top: '38%',left: '0%'},
+                onclick:function () {
+                    $.fn.fullpage.moveTo(3);
+                }
             })
             .addComponent('huangguan',{
                 bg: page1_huangguan,
-                width: '441',
-                height: '293',
                 css: {
                     position: 'absolute',
                     backgroundSize:'100% 100%',
@@ -127,10 +141,13 @@ $(function(){
                     left: '50%',
                     marginLeft: '-110px',
                     zIndex:'3',
-                    opacity: 0
+                    opacity: 0,
+                    width: '22rem',
+                    height: '15rem'
                 },
                 animateIn:{opacity:1, top: '30%'},
-                animateOut: {opacity:0, top: '18%'}
+                animateOut: {opacity:0, top: '18%'},
+
             })
         .addPage('page2')
             .addComponent('zhongjian',{
@@ -140,161 +157,160 @@ $(function(){
                     position: 'absolute',
                     top: '44%',
                     left: '38%',
-                    // marginLeft: '-48px',
-                    zIndex: '100'
-
+                    zIndex: '100',
+                    width: '9.5rem',
+                    height: '16.4rem',
                 },
-                width: '192',
-                height: '328',
             })
             .addComponent('zuo1',{
-                bg: page2_jiangbei,
+                bg: page2_jb_left1,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '44%',
                     left: '21%',
-                    zIndex: '95'
-                },
-                width: '140',
-                height: '256',
+                    zIndex: '95',
+                    width: '7rem',
+                    height: '12.8rem',
+                }
             })
             .addComponent('zuo2',{
-                bg: page2_jiangbei,
+                bg: page2_jb_left2,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '41%',
                     left: '8%',
-                    zIndex: '90'
-                },
-                width: '128',
-                height: '244',
+                    zIndex: '90',
+                    width: '6.4rem',
+                    height: '12rem',
+                }
             })
             .addComponent('zuo3',{
-                bg: page2_jiangbei,
+                bg: page2_jb_left3,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '37%',
                     left: '4%',
-                    zIndex: '85'
-                },
-                width: '108',
-                height: '200',
+                    zIndex: '85',
+                    width: '5.4rem',
+                    height: '10rem'
+                }
             })
             .addComponent('zuo4',{
-                bg: page2_jiangbei,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '33%',
                     left: '16%',
-                    zIndex: '80'
-                },
-                width: '86',
-                height: '160',
+                    zIndex: '80',
+                    width: '4.3rem',
+                    height: '8rem',
+                }
             })
             .addComponent('zuo5',{
-                bg: page2_jiangbei,
+                bg: page2_jb_left5,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '31%',
                     left: '29%',
-                    zIndex: '75'
-                },
-                width: '72',
-                height: '132',
+                    zIndex: '75',
+                    width: '3.6rem',
+                    height: '6.6rem',
+                }
             })
             .addComponent('zuo6',{
-                bg: page2_jiangbei,
+                bg: page2_jb_left6,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '30%',
                     left: '40%',
-                    zIndex: '70'
-                },
-                width: '66',
-                height: '122',
+                    zIndex: '70',
+                    width: '3.3rem',
+                    height: '6rem',
+                }
             })
             .addComponent('you6',{
-                bg: page2_jiangbei,
+                bg: page2_jb_right6,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '30%',
                     left: '50%',
-                    zIndex: '70'
+                    zIndex: '70',
+                    width: '3.3rem',
+                    height: '6rem'
                 },
-                width: '66',
-                height: '122',
             })
             .addComponent('you5',{
-                bg: page2_jiangbei,
+                bg: page2_jb_right5,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '31%',
                     left: '61%',
-                    zIndex: '75'
-                },
-                width: '72',
-                height: '132',
+                    zIndex: '75',
+                    width: '3.6rem',
+                    height: '6.6rem',
+                }
             })
             .addComponent('you4',{
-                bg: page2_jiangbei,
+                bg: page2_jb_right4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '33%',
                     left: '72.5%',
-                    zIndex: '80'
+                    zIndex: '80',
+                    width: '4.3rem',
+                    height: '8rem',
                 },
-                width: '86',
-                height: '160',
+
             })
             .addComponent('you3',{
-                bg: page2_jiangbei,
+                bg: page2_jb_right3,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '37%',
                     left: '81%',
-                    zIndex: '85'
-                },
-                width: '108',
-                height: '200',
+                    zIndex: '85',
+                    width: '5.4rem',
+                    height: '10rem'
+                }
             })
             .addComponent('you2',{
-                bg: page2_jiangbei,
+                bg: page2_jb_right2,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '41%',
                     left: '75%',
-                    zIndex: '90'
-                },
-                width: '128',
-                height: '244',
+                    zIndex: '90',
+                    width: '6.4rem',
+                    height: '12rem',
+                }
             })
             .addComponent('you1',{
-                bg: page2_jiangbei,
+                bg: page2_jb_right1,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '44%',
                     left: '60%',
-                    zIndex: '95'
-                },
-                width: '140',
-                height: '256',
+                    zIndex: '95',
+                    width: '7rem',
+                    height: '12.8rem'
+                }
             })
             .addComponent('text',{
-                text: '2015-2016赛季NBA总冠军',
+                text: '2015-2016赛季NBA总冠军1',
                 css: {
-                    fontSize: '1.3em',
+                    fontSize: '2rem',
                     position: 'relative',
                     color: '#ffffff',
                     textAlign: 'center',
@@ -303,13 +319,17 @@ $(function(){
             })
             .addComponent('home',{
                 bg: home,
-                height: '92',
-                width: '92',
                 css: {
-                    position: 'relative',
+                    position: 'absolute',
                     backgroundSize: 'contain',
-                    margin: '0 auto',
-                    top:'83%'
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick:function () {
+                    $.fn.fullpage.moveTo(2);
                 }
             })
     .loader(3);

@@ -81,7 +81,6 @@ function H5( ) {
         this.el.fullpage({
             onLeave:function( index, nextIndex, direction) {
                 $(this).find('.h5_component').trigger('onLeave');
-                // rotate();
             },
             afterLoad:function( anchorLink, index ) {
                 $(this).find('.h5_component').trigger('onLoad');

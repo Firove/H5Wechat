@@ -28,7 +28,6 @@ function H5ComponentBase( name, cfg ) {
     }
 
     component.on('onLoad',function(){
-       
         setTimeout(function(){
             component.addClass(cls+'_load').removeClass(cls+'_leave');
             cfg.animateIn && component.animate( cfg.animateIn ,600);
