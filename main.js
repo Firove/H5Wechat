@@ -7,6 +7,7 @@ import H5 from './src/common/js/H5.js';
 import './src/common/style/H5.css';
 import './src/common/style/base.css';
 import './src/common/style/H5ComponentBase.css';
+import './src/common/style/preload.less';
 import rotate from './src/components/page_2/js/page2.js';
 import rotateshoe from './src/components/page_3/js/page3.js';
 import './src/common/js/huadong.js';
@@ -17,23 +18,20 @@ import './src/components/face/style/face.less';
 import './src/components/page_1/style/page1.less';
 import './src/components/page_2/style/page2.less';
 import './src/components/page_3/style/page3.less';
+import './src/components/illusion/style/illusion.less';
 
 $(function(){
     var face0 = require('./src/components/face/img/face.png');
     var face1 = require('./src/components/face/img/face_in.png');
-
     var page1_guiji = require('./src/components/page_1/img/guiji.png');
     var page1_xiezi = require('./src/components/page_1/img/xiezi.png');
     var page1_yiner = require('./src/components/page_1/img/yiner.png');
     var page1_jiangbei = require('./src/components/page_1/img/jiangbei.png');
     var page1_huangguan = require('./src/components/page_1/img/huangguan.png');
-    // var page2_jiangbei = require('./src/components/page_2/img/jb_left1.png');
     var page2_jiangbeiCenter = require('./src/components/page_2/img/jb2.png');
     var page2_jb_left1 = require('./src/components/page_2/img/jb4.png');
     var page2_jb_left2 = require('./src/components/page_2/img/jb1.png');
-//    var page2_jb_left3 = require('./src/components/page_2/img/jb_left1.png');
     var page2_jb_left4 = require('./src/components/page_2/img/jb3.png');
-    
     var page3_shoeqian = require('./src/components/page_3/img/shoe1.png');
     var page3_shoe_left1 = require('./src/components/page_3/img/shoe2.png');
     var page3_shoe_left2 = require('./src/components/page_3/img/shoe3.png');
@@ -48,9 +46,67 @@ $(function(){
     var page3_shoe_right3 = require('./src/components/page_3/img/shoe12.png');
     var page3_shoe_right2 = require('./src/components/page_3/img/shoe13.png');
     var page3_shoe_right1 = require('./src/components/page_3/img/shoe14.png');
+    var chahua1 = require('./src/components/illusion/img/chahua1.jpg');
+    var chahua2 = require('./src/components/illusion/img/chahua2.jpg');
+    var chahua3 = require('./src/components/illusion/img/chahua3.jpg');
+    var chahua4 = require('./src/components/illusion/img/chahua4.jpg');
+    var chahua5 = require('./src/components/illusion/img/chahua5.jpg');
+    var chahua6 = require('./src/components/illusion/img/chahua6.jpg');
+    var chahua7 = require('./src/components/illusion/img/chahua7.jpg');
+    var chahua8 = require('./src/components/illusion/img/chahua8.jpg');
+    var chahua9 = require('./src/components/illusion/img/chahua9.jpg');
+    var chahua10 = require('./src/components/illusion/img/chahua10.jpg');
+    var chahua11 = require('./src/components/illusion/img/chahua11.jpg');
+    var chahua12 = require('./src/components/illusion/img/chahua12.jpg');
+    var chahua13 = require('./src/components/illusion/img/chahua13.jpg');
+    var chahua14 = require('./src/components/illusion/img/chahua14.jpg');
+    var chahua15 = require('./src/components/illusion/img/chahua15.jpg');
+    var chahua16 = require('./src/components/illusion/img/chahua16.jpg');
+    var chahua17 = require('./src/components/illusion/img/chahua17.jpg');
+    var chahua18 = require('./src/components/illusion/img/chahua18.jpg');
+    var chahua19 = require('./src/components/illusion/img/chahua19.jpg');
+    var chahua20 = require('./src/components/illusion/img/chahua20.jpg');
+    var chahua21 = require('./src/components/illusion/img/chahua21.jpg');
+    var chahua22 = require('./src/components/illusion/img/chahua22.jpg');
+    var chahua23 = require('./src/components/illusion/img/chahua23.jpg');
+    var chahua24 = require('./src/components/illusion/img/chahua24.jpg');
+    var chahua25 = require('./src/components/illusion/img/chahua25.jpg');
+    var chahua26 = require('./src/components/illusion/img/chahua26.jpg');
+    var chahua27 = require('./src/components/illusion/img/chahua27.jpg');
 
     var home = require('./src/components/page_2/img/home.png');
     var back = require('./src/components/page_3/img/back.png');
+    var bg = require('./src/components/page_1/img/bg.png');
+    var imgs = [
+        face0,face1,page1_guiji,page1_xiezi,page1_yiner,page1_jiangbei,page1_huangguan,
+        page2_jiangbeiCenter,page2_jb_left1,page2_jb_left2,page2_jb_left4,page3_shoeqian,
+        page3_shoe_left1,page3_shoe_left2,page3_shoe_left3,page3_shoe_left4,page3_shoe_left5,
+        page3_shoe_left6,page3_shoehou,page3_shoe_right6,page3_shoe_right5,page3_shoe_right4,
+        page3_shoe_right3,page3_shoe_right2,page3_shoe_right1,home,back,bg,chahua1,chahua2,chahua3,
+        chahua4,chahua5,chahua6,chahua7,chahua8,chahua9,chahua10,chahua11,chahua12,chahua13,chahua14,
+        chahua15,chahua16,chahua17,chahua18,chahua19,chahua20,chahua21,chahua22,chahua23,chahua24,
+        chahua25,chahua26,chahua27
+    ];
+    const len = imgs.length;
+    let count = 0;
+    for (let i = 0; i < len; i++) {
+        let imgObj = new Image();
+        imgObj.onload = imgObj.onerror = function (){
+            count++;
+            console.log(count);
+            if (count >= len){
+                $('.preload:first').hide();
+                return;
+            }
+            var process = ((count/len)*100).toFixed(2) + '%';
+            $('.process:first').text(process);
+        };
+        imgObj.src = imgs[i];
+    }
+
+
+
+
     var h5 = new H5;
     h5
         .addPage('face')
@@ -124,7 +180,10 @@ $(function(){
                     height: '9rem',
                 },
                 animateIn:{opacity:1,top: '20%',left: '30%'},
-                animateOut: {opacity:0,top: '20%',left: '30%'}
+                animateOut: {opacity:0,top: '20%',left: '30%'},
+                onclick:function () {
+                    $.fn.fullpage.moveTo(5);
+                }
             })
             .addComponent('jiangbei',{
                 bg: page1_jiangbei,
@@ -369,7 +428,7 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '43%',
+                    top: '40%',
                     left: '21%',
                     zIndex: '100',
                     width: '19.1rem',
@@ -382,10 +441,10 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '40%',
-                    left: '8%',
+                    left: '7%',
                     zIndex: '95',
-                    width: '17.2rem',
-                    height: '16.7rem',
+                    width: '15rem',
+                    height: '14.5rem',
                 },
                 
                 
@@ -395,11 +454,11 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '37%',
-                    left: '1%',
+                    top: '38%',
+                    left: '4%',
                     zIndex: '90',
-                    width: '19.1rem',
-                    height: '9.95rem',
+                    width: '15rem',
+                    height: '7.8rem',
                 }
             })
           .addComponent('shoezuo3',{
@@ -517,11 +576,11 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '33%',
-                    left: '54.5%',
+                    top: '35%',
+                    left: '65%',
                     zIndex: '90',
-                    width: '19.1rem',
-                    height: '9.95rem',
+                    width: '15rem',
+                    height: '7.8rem',
                 }
             })
             .addComponent('shoeyou1',{
@@ -530,10 +589,10 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '38%',
-                    left: '45%',
+                    left: '48%',
                     zIndex: '95',
-                    width: '17.2rem',
-                    height: '16.7rem',
+                    width: '15rem',
+                    height: '14.5rem',
                 }
             })
             .addComponent('text',{
@@ -566,7 +625,440 @@ $(function(){
                          $.fn.fullpage.moveTo(2)
                     }
             })
-    .loader(4);
+        .addPage('illusion1')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion2')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion3')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion4')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion5')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion6')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion7')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion8')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion9')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion10')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion11')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion12')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion13')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion14')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion15')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion16')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion17')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion18')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion19')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion20')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion21')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion22')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion23')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion24')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion25')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion26')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion27')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+
+    .loader();
     rotate();
     rotateshoe();
 

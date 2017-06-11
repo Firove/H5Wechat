@@ -7,7 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: 'js/[name].bundle.js'
     },
-    devtool: 'source-map',
+    // devtool: 'source-map',
     module: {
         rules: [
             {
@@ -86,7 +86,7 @@ module.exports = {
             // 插件的输出是output的path
             template: 'index.html',
             filename: 'index.html',
-            title: 'a',
+            // title: '插画',
         })
     ],
     devServer: {

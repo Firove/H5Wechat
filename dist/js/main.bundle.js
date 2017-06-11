@@ -63,17 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 42);
+/******/ 	return __webpack_require__(__webpack_require__.s = 75);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/4be60c5c.jb_left1.png";
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 /*
@@ -155,7 +149,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -192,7 +186,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(55);
+	fixUrls = __webpack_require__(90);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -449,6 +443,12 @@ function updateLink(linkElement, options, obj) {
 		URL.revokeObjectURL(oldSrc);
 }
 
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/7bc0b366.bg.png";
 
 /***/ }),
 /* 3 */
@@ -10714,12 +10714,6 @@ return jQuery;
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/7bc0b366.bg.png";
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
@@ -10780,103 +10774,347 @@ function evenzc(eve) {
 };
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/8b8bad85.home.png";
 
 /***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/9c2dbd45.back.png";
+
+/***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/a5ddb944.back.png";
+module.exports = __webpack_require__.p + "img/2e7fc086.chahua1.jpg";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-left-1.png";
+module.exports = __webpack_require__.p + "img/032f3f91.chahua10.jpg";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-left-2.png";
+module.exports = __webpack_require__.p + "img/7ff3d087.chahua11.jpg";
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-left-3.png";
+module.exports = __webpack_require__.p + "img/61cc489a.chahua12.jpg";
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-left-4.png";
+module.exports = __webpack_require__.p + "img/0d5ae8a5.chahua13.jpg";
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-left-5.png";
+module.exports = __webpack_require__.p + "img/1bde47b1.chahua14.jpg";
 
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-left-6.png";
+module.exports = __webpack_require__.p + "img/2eeb9996.chahua15.jpg";
 
 /***/ }),
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-right-1.png";
+module.exports = __webpack_require__.p + "img/d513eda9.chahua16.jpg";
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-right-2.png";
+module.exports = __webpack_require__.p + "img/4921c52f.chahua17.jpg";
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-right-3.png";
+module.exports = __webpack_require__.p + "img/37d53095.chahua18.jpg";
 
 /***/ }),
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-right-4.png";
+module.exports = __webpack_require__.p + "img/7e83566b.chahua19.jpg";
 
 /***/ }),
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-right-5.png";
+module.exports = __webpack_require__.p + "img/54e39665.chahua2.jpg";
 
 /***/ }),
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe-right-6.png";
+module.exports = __webpack_require__.p + "img/320f7331.chahua20.jpg";
 
 /***/ }),
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe0.png";
+module.exports = __webpack_require__.p + "img/1becdd99.chahua21.jpg";
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/81aee241.shoe14.png";
+module.exports = __webpack_require__.p + "img/fb4960bb.chahua22.jpg";
 
 /***/ }),
 /* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/85107fbb.chahua23.jpg";
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/20c339ad.chahua24.jpg";
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/711e10e7.chahua25.jpg";
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/8fde0afe.chahua26.jpg";
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/a814114c.chahua27.jpg";
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/ff3d8820.chahua3.jpg";
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/fb12e35c.chahua4.jpg";
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/a3dd91c2.chahua5.jpg";
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/9c42ba43.chahua6.jpg";
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/620ad3de.chahua7.jpg";
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/a9f39299.chahua8.jpg";
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/d81bb8ae.chahua9.jpg";
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/f0a3b2d5.jiangbei.png";
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/7a214f38.jb1.png";
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/5aea8744.jb2.png";
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/82c34f02.jb3.png";
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/b304ab31.jb4.png";
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/6064c11c.shoe1.png";
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/b6810914.shoe10.png";
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/0df1cc72.shoe11.png";
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/a7d18897.shoe12.png";
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/3a4df124.shoe13.png";
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/a6a54b73.shoe14.png";
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/3f9a3368.shoe2.png";
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/f44272b8.shoe3.png";
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/8898423d.shoe4.png";
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/e1484f2a.shoe5.png";
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/7dd623cd.shoe6.png";
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/d1197bbe.shoe7.png";
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/8c8e51bf.shoe8.png";
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/e4c21e3e.shoe9.png";
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.animaRight = animaRight;
+exports.animaLeft = animaLeft;
+/**
+ * Created by 文利 on 2017/6/11.
+ */
+function animaRight($aDiv, classStr, text, position) {
+    if ($(classStr + " :animated").length <= 0) {
+        var last = position.pop();
+        position.unshift(last);
+        var firstText = text.shift();
+        text.push(firstText);
+        $(classStr + " .h5_component_name_text:first").text(text[0]);
+        $aDiv.each(function (i) {
+            $(this).animate({
+                zIndex: position[i][4],
+                width: position[i][0],
+                height: position[i][1],
+                left: position[i][2],
+                top: position[i][3]
+            }, 600, 'linear');
+        });
+    }
+}
+function animaLeft($aDiv, classStr, text, position) {
+    if ($(classStr + " :animated").length <= 0) {
+        var first = position.shift();
+        position.push(first);
+        var lastText = text.pop();
+        text.unshift(lastText);
+        $(classStr + " .h5_component_name_text:first").text(text[0]);
+        $aDiv.each(function (i) {
+            $(this).animate({
+                zIndex: position[i][4],
+                width: position[i][0],
+                height: position[i][1],
+                left: position[i][2],
+                top: position[i][3]
+            }, 600, 'linear');
+        });
+    }
+}
+
+/***/ }),
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10886,11 +11124,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _H5ComponentBase = __webpack_require__(43);
+var _H5ComponentBase = __webpack_require__(76);
 
 var _H5ComponentBase2 = _interopRequireDefault(_H5ComponentBase);
 
-var _fullpage = __webpack_require__(53);
+var _fullpage = __webpack_require__(88);
 
 var _fullpage2 = _interopRequireDefault(_fullpage);
 
@@ -10994,7 +11232,7 @@ function H5() {
 }
 
 /***/ }),
-/* 23 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11004,7 +11242,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _huadong = __webpack_require__(5);
+var _animaLR = __webpack_require__(53);
+
+var _huadong = __webpack_require__(4);
 
 /**
  * Created by 文利 on 2017/5/4.
@@ -11012,22 +11252,14 @@ var _huadong = __webpack_require__(5);
 exports.default = rotate;
 
 function rotate() {
-    var text = ["2015-2016赛季NBA总冠军1", "2015-2016赛季NBA总冠军2", "2015-2016赛季NBA总冠军3", "2015-2016赛季NBA总冠军4", "2015-2016赛季NBA总冠军5", "2015-2016赛季NBA总冠军6", "2015-2016赛季NBA总冠军7", "2015-2016赛季NBA总冠军8", "2015-2016赛季NBA总冠军9", "2015-2016赛季NBA总冠军10", "2015-2016赛季NBA总冠军11", "2015-2016赛季NBA总冠军12", "2015-2016赛季NBA总冠军13"];
+    var text = ["2015-16赛季NBA总决赛MVP", "2003-04赛季NBA最佳新秀", "2006年全明星赛MVP", "2008年全明星赛MVP", "2008-09赛季NBA常规赛MVP", "2009-10赛季NBA常规赛MVP", "2011-12赛季NBA常规赛MVP", "2012-13赛季NBA常规赛MVP", "2011-12赛季NBA总冠军", "2011-12赛季NBA总决赛MVP", "2012-13赛季NBA总冠军", "2012-13赛季NBA总决赛MVP", "2015-16赛季NBA总冠军"];
     var position = [];
-    var page2_jiangbei = __webpack_require__(0);
-    var page2_jb_left1 = __webpack_require__(0);
-    var page2_jb_left2 = __webpack_require__(0);
-    var page2_jb_left3 = __webpack_require__(0);
-    var page2_jb_left4 = __webpack_require__(0);
-    var page2_jb_left5 = __webpack_require__(0);
-    var page2_jb_left6 = __webpack_require__(0);
-    var page2_jb_right6 = __webpack_require__(0);
-    var page2_jb_right5 = __webpack_require__(0);
-    var page2_jb_right4 = __webpack_require__(0);
-    var page2_jb_right3 = __webpack_require__(0);
-    var page2_jb_right2 = __webpack_require__(0);
-    var page2_jb_right1 = __webpack_require__(0);
-    var src = [[page2_jiangbei, "111", "5555555"], [page2_jb_left1, 222, "5555555"], [page2_jb_left2, 333, "5555555"], [page2_jb_left3, 444, "5555555"], [page2_jb_left4, 555, "5555555"], [page2_jb_left5, 666, "5555555"], [page2_jb_left6, 777, "5555555"], [page2_jb_right6, 888, "5555555"], [page2_jb_right5, 999, "5555555"], [page2_jb_right4, 100, "5555555"], [page2_jb_right3, 200, "5555555"], [page2_jb_right2, 300, "5555555"], [page2_jb_right1, 400, "5555555"]];
+    var page2_jiangbei = __webpack_require__(34);
+    var page2_jiangbei1 = __webpack_require__(36);
+    var page2_jiangbei2 = __webpack_require__(38);
+    var page2_jiangbei3 = __webpack_require__(35);
+    var page2_jiangbei4 = __webpack_require__(37);
+    var src = [[page2_jiangbei1, "2015-16赛季NBA总决赛MVP", "NBA总决赛抢七决战，骑士93-89战胜勇士，以4-3的比分夺得队史首座冠军奖杯，他们成为历史上第一支以1-3落后逆转夺冠的球队。詹姆斯拿到27分11篮板11助攻3盖帽的生涯第七次总决赛三双数据，这也是2016年总决赛唯一的三双。7场比赛詹姆斯场均29.7分、11.3个篮板、8.9个助攻、2.4个抢断、2.3盖帽。最终，詹姆斯全票当选15-16赛季总决赛MVP"], [page2_jiangbei2, "2003-04赛季NBA最佳新秀", "詹姆斯这个赛季平均每场贡献20.9分、5.9次助攻和5.5个篮板球，是继奥斯卡•罗伯逊及迈克尔•乔丹后，NBA史上第三位于新秀球季就得到如此数据的球员。4月20日詹姆斯击败卡梅隆•安东尼获得了赛季最佳新秀称号"], [page2_jiangbei3, "2006年全明星赛MVP", "2006年2月21日全明星赛，在落后21分的情况下，东部全明星在詹姆斯的火烫手感和底特律活塞队的4名全明星团队合作的引领下以122比120战胜了西部全明星。年仅21岁的詹姆斯，本场比赛得到29分，6个篮板及2次助攻，以21岁51天成为了史上最年轻的全明星MVP。"], [page2_jiangbei3, "2008年全明星赛MVP", "本赛季詹姆斯连续4年入选东部联盟全明星，2008年2月18日，在新奥尔良全明星赛上，协助东部联盟以134-128击败西部联盟，詹姆斯以27分、8篮板、9次助攻，2个抢断及2个盖帽的成绩获得2008年NBA全明星赛MVP"], [page2_jiangbei4, "2008-09赛季NBA常规赛MVP", "3月25日骑士队击败新泽西篮网后，协助球队取得自成立以来最好的成绩。凭借2008-2009赛季出色的表现詹姆斯成为常规赛最有价值球员，他本人也成为即2001年的艾弗森后，2001-2009年9年来第一个出自东部的MVP。"], [page2_jiangbei4, "2009-10赛季NBA常规赛MVP", "詹姆斯带领骑士以61胜的战绩再次笑傲全联盟，他也蝉联了这个赛季的常规赛MVP，也成为NBA史上第十位连续两个赛季获此荣誉的球员。这个赛季詹姆斯常规赛场均贡献8.6次助攻，超越伯德的场均7.6次助攻，成为NBA历史上单季场均助攻最多的小前锋。"], [page2_jiangbei4, "2011-12赛季NBA常规赛MVP", "2011-12赛季，受到劳资谈判影响，常规赛缩水，詹姆斯在其所参加的62场常规赛中全部首发，场均上场37.5分钟，得到27.1分、7.9个篮板和6.2次助攻，在投篮命中率、三分球命中率上均创造了个人生涯新高。凭借出色的表现，詹姆斯第三次加冕常规赛MVP，这是他2008-2012赛季4个赛季第3次获此殊荣，同时“小皇帝”成为继迈克尔-乔丹之后首位至少3夺常规赛MVP之人。"], [page2_jiangbei4, "2012-13赛季NBA常规赛MVP", "本赛季詹姆斯率领球队在2月3日~3月25日缔造了NBA史上第二长的27连胜，他在连胜期间打出场均27.0分、8.1篮板、8.0助攻、1.9抢断、57.5%命中率的数据，常规赛后毫无悬念地获得MVP。这是詹姆斯5年内第4次获此殊荣，他也成为了NBA史上第5位至少4次获得常规赛MVP的球员。"], [page2_jiangbei, "2011-12赛季NBA总冠军", "2012总决赛中面对雷霆，热火在先失一场情况下连赢四场，以4-1夺取2012年NBA总冠军。詹姆斯平生第一次捧起总冠军奖杯"], [page2_jiangbei1, "2011-12赛季NBA总决赛MVP", "詹姆斯在自己的第三次总决赛上场均轰下28.6分10.2篮板7.4助攻，投篮命中率47.2%。并在最后一场中他打出三双，贡献26分、11个篮板和13次助攻，当之无愧地成为总决赛MVP。"], [page2_jiangbei, "2012-13赛季NBA总冠军", "总决赛对阵马刺队，热火在第六战凭借雷阿伦的三分打进加时赛并扳平总比分。抢七战詹姆斯表现出色独得37分、12篮板和4助攻，帮助热火队4：3击败马刺队卫冕总冠军。"], [page2_jiangbei1, "2012-13赛季NBA总决赛MVP", "7场系列赛，詹姆斯平均25.3分、10.9篮板、外加7次助攻再次获得NBA总决赛MVP。詹姆斯连续两年包办了常规赛和总决赛的MVP。"], [page2_jiangbei, "2015-16赛季NBA总冠军", "回归骑士队的詹姆斯率领球队连续两年与金州勇士队会师总决赛。在前四战大部分1：3落后的情况下，詹姆斯与欧文双双爆发，率队连扳三场最终完成了NBA总决赛历史上最伟大的逆转，获得2016年NBA总冠军。终结了克利夫兰长达52年的冠军荒。"]];
     var $aDiv = $('.h5_page_page2 .h5_component:lt(13)');
     $aDiv.each(function (i) {
         position.push([$(this).width(), $(this).height(), $(this).css('left'), $(this).css('top'), $(this).css('zIndex')]);
@@ -11044,69 +11276,27 @@ function rotate() {
     $("#back").on('click', function () {
         jbDetailClose();
     });
-    //    $('.h5_page_page2').click(anima);
     var dom = $('.h5_page_page2').get(0);
     (0, _huadong.mobilwmtouch)(dom);
     dom.addEventListener('touright', function (e) {
-        animaRight();
+        (0, _animaLR.animaRight)($aDiv, '.h5_page_page2', text, position);
         return false;
     });
     dom.addEventListener('touleft', function (e) {
-        animaLeft();
+        (0, _animaLR.animaLeft)($aDiv, '.h5_page_page2', text, position);
         return false;
     });
-
-    function animaRight() {
-        if ($(".h5_page_page2 :animated").length <= 0) {
-            var last = position.pop();
-            position.unshift(last);
-
-            var lastText = text.pop();
-            text.unshift(lastText);
-            $(".h5_page_page2 .h5_component_name_text:first").text(text[0]);
-            // console.log($(".h5_page_page2 .h5_component_name_text:first").text);
-            $aDiv.each(function (i) {
-                $(this).animate({
-                    width: position[i][0],
-                    height: position[i][1],
-                    left: position[i][2],
-                    top: position[i][3],
-                    zIndex: position[i][4]
-                }, 600, 'linear');
-            });
-        }
-    }
-    function animaLeft() {
-        if ($(".h5_page_page2 :animated").length <= 0) {
-            var first = position.shift();
-            position.push(first);
-            var firstText = text.shift();
-            text.push(firstText);
-            $(".h5_page_page2 .h5_component_name_text:first").text(text[0]);
-            $aDiv.each(function (i) {
-                $(this).animate({
-                    width: position[i][0],
-                    height: position[i][1],
-                    left: position[i][2],
-                    top: position[i][3],
-                    zIndex: position[i][4]
-                }, 600, 'linear');
-            });
-        }
-    }
-
-    function jbDetailDisplay(src) {
-        //        var page2_jiangbei = require('../img/jb_left1.png');
-        $("#jbdetail #jb").attr('src', src);
-        $("#jbdetail").show();
-    }
-    function jbDetailClose() {
-        $("#jbdetail").hide();
-    }
+}
+function jbDetailDisplay(src) {
+    $("#jbdetail #jb").attr('src', src);
+    $("#jbdetail").show();
+}
+function jbDetailClose() {
+    $("#jbdetail").hide();
 }
 
 /***/ }),
-/* 24 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11116,31 +11306,33 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _huadong = __webpack_require__(5);
+var _huadong = __webpack_require__(4);
+
+var _animaLR = __webpack_require__(53);
 
 exports.default = rotateshoe;
 
 function rotateshoe() {
-    var texts = ["2003 NIKE ZOOM GENERATION", "2003 NIKE ZOOM GENERATION 2", "2003 NIKE ZOOM GENERATION 3", "2003 NIKE ZOOM GENERATION 4", "2003 NIKE ZOOM GENERATION 5", "2003 NIKE ZOOM GENERATION 6", "2003 NIKE ZOOM GENERATION 7", "2003 NIKE ZOOM GENERATION 8", "2003 NIKE ZOOM GENERATION 9", "2003 NIKE ZOOM GENERATION0 10", "2003 NIKE ZOOM GENERATION 11", "2003 NIKE ZOOM GENERATION 12", "2003 NIKE ZOOM GENERATION 13", "2003 NIKE ZOOM GENERATION 14"];
+    var texts = ["2003 NIKE AIR ZOOM GENERATION", "2004 NIKE AIR ZOOM LEBRON II", "2005 NIKE AIR ZOOM LEBRON III", "2005 NIKE AIR ZOOM LEBRON III", "2007 NIKE AIR ZOOM LEBRON V", "2008 NIKE AIR ZOOM LEBRON VI", "2009 NIKE AIR MAX LEBRON VII", "2010 NIKE AIR MAX LEBRON VIII", "2011 NIKE AIR MAX LEBRON IX", "2012 NIKE LEBRON X", "2013 NIKE LEBRON XI", "2014 NIKE LEBRON XII", "2015 NIKE LEBRON XIII", "2016 NIKE LEBRON XIV"];
     var positions = [];
-    var page3_shoe1 = __webpack_require__(20);
-    var page3_shoe_left1 = __webpack_require__(8);
-    var page3_shoe_left2 = __webpack_require__(9);
-    var page3_shoe_left3 = __webpack_require__(10);
-    var page3_shoe_left4 = __webpack_require__(11);
-    var page3_shoe_left5 = __webpack_require__(12);
-    var page3_shoe_left6 = __webpack_require__(13);
-    var page3_shoe_right6 = __webpack_require__(19);
-    var page3_shoe_right5 = __webpack_require__(18);
-    var page3_shoe_right4 = __webpack_require__(17);
-    var page3_shoe_right3 = __webpack_require__(16);
-    var page3_shoe_right2 = __webpack_require__(15);
-    var page3_shoe_right1 = __webpack_require__(14);
-    var page3_shoe14 = __webpack_require__(21);
-    var srcs = [[page3_shoe1, "NIKE AIR ZOOM GENERATION 2003", "NIKE为勒布朗詹姆斯打造的第一款签名鞋，设计灵感来自于他的悍马H2，由此开启了LEBRON系列"], [page3_shoe_left1, 222, "detailtext"], [page3_shoe_left2, 333, "detailtext"], [page3_shoe_left3, 444, "detailtext"], [page3_shoe_left4, 555, "detailtext"], [page3_shoe_left5, 666, "detailtext"], [page3_shoe_left6, 777, "detailtext"], [page3_shoe14, 500, "detailtext"], [page3_shoe_right6, 888, "detailtext"], [page3_shoe_right5, 999, "detailtext"], [page3_shoe_right4, 100, "detailtext"], [page3_shoe_right3, 200, "detailtext"], [page3_shoe_right2, 300, "detailtext"], [page3_shoe_right1, 400, "detailtext"]];
+    var page3_shoeqian = __webpack_require__(39);
+    var page3_shoe_left1 = __webpack_require__(45);
+    var page3_shoe_left2 = __webpack_require__(46);
+    var page3_shoe_left3 = __webpack_require__(47);
+    var page3_shoe_left4 = __webpack_require__(48);
+    var page3_shoe_left5 = __webpack_require__(49);
+    var page3_shoe_left6 = __webpack_require__(50);
+    var page3_shoehou = __webpack_require__(51);
+    var page3_shoe_right6 = __webpack_require__(52);
+    var page3_shoe_right5 = __webpack_require__(40);
+    var page3_shoe_right4 = __webpack_require__(41);
+    var page3_shoe_right3 = __webpack_require__(42);
+    var page3_shoe_right2 = __webpack_require__(43);
+    var page3_shoe_right1 = __webpack_require__(44);
+
+    var srcs = [[page3_shoeqian, "2003 NIKE AIR ZOOM GENERATION", "勒布朗.詹姆斯加入NBA不到几个月NIKE就为其推出了第一双篮球鞋-----NIKE AIR ZOOM GENERATION。鞋子是用的sphrene内村，十分透气，缓震配备了前掌zoom，后掌air sole的科技，中底搭载有碳纤维板。"], [page3_shoe_left1, "2004 NIKE AIR ZOOM LEBRON II", "延续整个系列的这种风格与Air Jordan的高贵所对立，也许正象征着一个崇尚力量的时代将要回归。该鞋搭载了前掌双气室Zoom +后掌Cage Zoom，从穿着效果来看，脚感堪称一流。"], [page3_shoe_left2, "2005 NIKE AIR ZOOM LEBRON III", "中底的Phylon材质，大容量的多气室冲击式Zoom Air气垫和Pebax材质的后跟外壳组成了Zoom LeBron III的避震系统。Pebax笼状结构也做了一番瘦身，减少了其厚度，以保证达到高延展性与高反应性的要求。"], [page3_shoe_left3, "2006 NIKE AIR ZOOM LEBRON IV", "鞋身内部采用了内靴设计，使得脚在鞋内包裹性和稳定性都得到了很好的保证，尤其是鞋身与内靴的双重包裹让脚在鞋内备加感觉安全。鞋帮处那带有小皇帝詹姆斯个人LOGO的魔术帖，为脚踝安全系数的提升做了很大的贡献。"], [page3_shoe_left4, "2007 NIKE AIR ZOOM LEBRON V", "外观设计理念依旧是为詹姆斯展示帝王般的气质，外观设计上运用了曾经在Zoom LeBron 3上使用的手法——利用皮革对保护材料进行遮盖。这可不是画蛇添足，而是节省成本的好办法。而点缀在球鞋上的金属饰物则告诉人们这是一双不折不扣的Zoom。"], [page3_shoe_left5, "2008 NIKE AIR ZOOM LEBRON VI", "结合完美性能与时尚外观，以结实耐用、强度与舒适等概念研发。鞋舌内里布满LeBron James给篮球的情书手稿，展现LeBron James对篮球永不熄灭的热情、一种持续前进的生活与态度。"], [page3_shoe_left6, "2009 NIKE AIR MAX LEBRON VII", "使用了flywire 和max气垫后改为air max lebron 7)旨在提供最大的舒适性和稳定性，球鞋采用了耐克公司最先推出的创新缓震技术-专为篮球运动设计全掌Max Air气垫单元。与以前的专业篮球鞋相比，新款詹姆斯7代篮球鞋鞋面的Flywire技术采用了具有更高抗张强度的纤维。"], [page3_shoehou, "2010 NIKE AIR MAX LEBRON VIII", "采用“皮革+Flywire”的组合鞋面，支撑性和包裹感相比上代有了很大的提升。鞋身外侧TPU 制成的 Swoosh Logo美观，对鞋面也有一定的支撑性，鞋领和鞋跟之间的高度差有所增加，提供稳定的同时也提升了跟腱部位的舒适性。"], [page3_shoe_right6, "2011 NIKE AIR MAX LEBRON IX", "进入联盟的第一年就拥有了自己的签名球鞋...在这之前,只有乔丹希尔艾弗森等少数的几位前辈做到过，拥有自己的第9双签名鞋，排在他前面的,也只有乔丹和艾弗森。NIKE ZOOM LEBRON 9陪伴詹姆斯去年拿到总冠军。"], [page3_shoe_right5, "2012 NIKE LEBRON X", "在伦敦奥运会的决赛中，詹姆斯穿上了最新的zoom lebron 10征战赛场，并帮助美国队夺得冠军。全新战靴也搭载了nike最新的科技max zoom和动态飞线。"], [page3_shoe_right4, "2013 NIKE LEBRON XI", "以轻简理念打造橡胶外底，并搭载全新 Lunarlon 缓震配置，使其成为迄今为止最轻的一双詹姆斯专属战靴。这一 NIKEiD 定制款型提供缤纷的詹姆斯11代配色选择，从鞋面到外底，玩转色彩风暴，彰显个性本色。"], [page3_shoe_right3, "2014 NIKE LEBRON XII", "采用后掌MAX，前掌ZOOM技术，并将采用flyknit跑鞋技术来保护脚踝。并采用全新内靴技术。并且球鞋还配备了感应芯片，可以记录穿鞋者的运动状态，通过一款手机软件，穿鞋者可以看到自己的各项数值。"], [page3_shoe_right2, "2015 NIKE LEBRON XIII", "鞋面部分采用由透气网眼+Flywire飞线科技+全新设计的不对称鞋带系统组成的高动态鞋面，保证了良好透气性的同时还可提供极佳的包裹性及出色的支撑性，增强足部控制。"], [page3_shoe_right1, "2016 NIKE LEBRON XIV", " 从中足延伸至后跟的宽版灵活固定带设计，在多种速度中提供轻盈支撑，助力自由运动。Flywire 飞线技术采用轻盈强韧的飞线设计，与鞋带系统融合，有力提升鞋款的锁定感。三层式轻盈鞋面由弹性里料、穿孔泡棉和纤薄网布匠心构成，塑就出众透气性、灵活性及支撑效果。"]];
     var $bDiv = $('.h5_page_page3 .h5_component:lt(14)');
     $bDiv.each(function (i) {
-
         positions.push([$(this).width(), $(this).height(), $(this).css('left'), $(this).css('top'), $(this).css('zIndex')]);
         $(this).on('click', function () {
             shoeDetailDisplay(srcs[i][0]);
@@ -11158,64 +11350,25 @@ function rotateshoe() {
     var dom = $('.h5_page_page3').get(0);
     (0, _huadong.mobilwmtouch)(dom);
     dom.addEventListener('touright', function (e) {
-        animaRight1();
+        (0, _animaLR.animaRight)($bDiv, '.h5_page_page3', texts, positions);
         return false;
     });
 
     dom.addEventListener('touleft', function (e) {
-        animaLeft1();
+        (0, _animaLR.animaLeft)($bDiv, '.h5_page_page3', texts, positions);
         return false;
     });
-
-    function animaRight1() {
-        if ($(".h5_page_page3 :animated").length <= 0) {
-            var last = positions.pop();
-            positions.unshift(last);
-
-            var lastText = texts.pop();
-            texts.unshift(lastText);
-            $(".h5_page_page3 .h5_component_name_text:first").text(texts[0]);
-            // console.log($(".h5_page_page2 .h5_component_name_text:first").text);
-            $bDiv.each(function (i) {
-                $(this).animate({
-                    width: positions[i][0],
-                    height: positions[i][1],
-                    left: positions[i][2],
-                    top: positions[i][3],
-                    zIndex: positions[i][4]
-                }, 600, 'linear');
-            });
-        }
-    }
-    function animaLeft1() {
-        if ($(".h5_page_page3 :animated").length <= 0) {
-            var first = positions.shift();
-            positions.push(first);
-            var firstText = texts.shift();
-            texts.push(firstText);
-            $(".h5_page_page3 .h5_component_name_text:first").text(texts[0]);
-            $bDiv.each(function (i) {
-                $(this).animate({
-                    width: positions[i][0],
-                    height: positions[i][1],
-                    left: positions[i][2],
-                    top: positions[i][3],
-                    zIndex: positions[i][4]
-                }, 600, 'linear');
-            });
-        }
-    }
-    function shoeDetailDisplay(srcs) {
-        $("#shoedetail #shoedisplay").attr('src', srcs);
-        $("#shoedetail").show();
-    }
-    function shoeDetailClose() {
-        $("#shoedetail").hide();
-    }
+}
+function shoeDetailDisplay(srcs) {
+    $("#shoedetail #shoedisplay").attr('src', srcs);
+    $("#shoedetail").show();
+}
+function shoeDetailClose() {
+    $("#shoedetail").hide();
 }
 
 /***/ }),
-/* 25 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11237,7 +11390,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 	if ( true ) {
 
 		// AMD. Register as an anonymous module.
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(3), __webpack_require__(54) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(3), __webpack_require__(89) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -11957,16 +12110,16 @@ return $.widget;
 
 
 /***/ }),
-/* 26 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(44);
+var content = __webpack_require__(77);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -11983,16 +12136,42 @@ if(false) {
 }
 
 /***/ }),
-/* 27 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(45);
+var content = __webpack_require__(78);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/postcss-loader/index.js!../../../node_modules/less-loader/dist/index.js!./preload.less", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/postcss-loader/index.js!../../../node_modules/less-loader/dist/index.js!./preload.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(79);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12009,16 +12188,16 @@ if(false) {
 }
 
 /***/ }),
-/* 28 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(46);
+var content = __webpack_require__(80);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12035,16 +12214,42 @@ if(false) {
 }
 
 /***/ }),
-/* 29 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(47);
+var content = __webpack_require__(81);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./illusion.less", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./illusion.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(82);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12061,16 +12266,16 @@ if(false) {
 }
 
 /***/ }),
-/* 30 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(48);
+var content = __webpack_require__(83);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12087,16 +12292,16 @@ if(false) {
 }
 
 /***/ }),
-/* 31 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(49);
+var content = __webpack_require__(84);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12113,16 +12318,16 @@ if(false) {
 }
 
 /***/ }),
-/* 32 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(50);
+var content = __webpack_require__(85);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12139,16 +12344,16 @@ if(false) {
 }
 
 /***/ }),
-/* 33 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(51);
+var content = __webpack_require__(86);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12165,16 +12370,16 @@ if(false) {
 }
 
 /***/ }),
-/* 34 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(52);
+var content = __webpack_require__(87);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(2)(content, {});
+var update = __webpack_require__(1)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -12191,88 +12396,84 @@ if(false) {
 }
 
 /***/ }),
-/* 35 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/9f3e8362.face.png";
 
 /***/ }),
-/* 36 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/12c34051.face_in.png";
 
 /***/ }),
-/* 37 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/fba9f79d.guiji.png";
 
 /***/ }),
-/* 38 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/a9225afd.huangguan.png";
 
 /***/ }),
-/* 39 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/f906e7b9.jiangbei.png";
+module.exports = __webpack_require__.p + "img/c612d27a.xiezi.png";
 
 /***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/6a5abd0b.xiezi.png";
-
-/***/ }),
-/* 41 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/5d4cf3ed.yiner.png";
 
 /***/ }),
-/* 42 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery_ui__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_common_js_huadong_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_common_js_huadong_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__src_common_js_huadong_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_common_style_detail_less__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_common_style_detail_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__src_common_style_detail_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_common_style_shoedetail_less__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_common_style_shoedetail_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__src_common_style_shoedetail_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_components_face_style_face_less__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_components_face_style_face_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__src_components_face_style_face_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_components_page_1_style_page1_less__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_components_page_1_style_page1_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__src_components_page_1_style_page1_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_components_page_2_style_page2_less__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_components_page_2_style_page2_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__src_components_page_2_style_page2_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_components_page_3_style_page3_less__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_components_page_3_style_page3_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__src_components_page_3_style_page3_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_common_style_preload_less__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_common_style_preload_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__src_common_style_preload_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_page_2_js_page2_js__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_page_2_js_page2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__src_components_page_2_js_page2_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_components_page_3_js_page3_js__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_components_page_3_js_page3_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__src_components_page_3_js_page3_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_common_js_huadong_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_common_js_huadong_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__src_common_js_huadong_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_common_style_detail_less__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_common_style_detail_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__src_common_style_detail_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_common_style_shoedetail_less__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_common_style_shoedetail_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__src_common_style_shoedetail_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_components_face_style_face_less__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_components_face_style_face_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__src_components_face_style_face_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_components_page_1_style_page1_less__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_components_page_1_style_page1_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__src_components_page_1_style_page1_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_components_page_2_style_page2_less__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_components_page_2_style_page2_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__src_components_page_2_style_page2_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__src_components_page_3_style_page3_less__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__src_components_page_3_style_page3_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__src_components_page_3_style_page3_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__src_components_illusion_style_illusion_less__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__src_components_illusion_style_illusion_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__src_components_illusion_style_illusion_less__);
 /**
  * Created by 文利 on 2017/4/26.
  */
-// import lunbo from './src/components/lunbo/lunbo.js';
-// import './src/components/lunbo/lunbo.less';
 
 
 
@@ -12291,54 +12492,104 @@ window.jQuery = window.$ = __webpack_require__(3);
 
 
 
+
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
-    var face0 = __webpack_require__(35);
-    var face1 = __webpack_require__(36);
+    var face0 = __webpack_require__(69);
+    var face1 = __webpack_require__(70);
+    var page1_guiji = __webpack_require__(71);
+    var page1_xiezi = __webpack_require__(73);
+    var page1_yiner = __webpack_require__(74);
+    var page1_jiangbei = __webpack_require__(34);
+    var page1_huangguan = __webpack_require__(72);
+    var page2_jiangbeiCenter = __webpack_require__(36);
+    var page2_jb_left1 = __webpack_require__(38);
+    var page2_jb_left2 = __webpack_require__(35);
+    var page2_jb_left4 = __webpack_require__(37);
+    var page3_shoeqian = __webpack_require__(39);
+    var page3_shoe_left1 = __webpack_require__(45);
+    var page3_shoe_left2 = __webpack_require__(46);
+    var page3_shoe_left3 = __webpack_require__(47);
+    var page3_shoe_left4 = __webpack_require__(48);
+    var page3_shoe_left5 = __webpack_require__(49);
+    var page3_shoe_left6 = __webpack_require__(50);
+    var page3_shoehou = __webpack_require__(51);
+    var page3_shoe_right6 = __webpack_require__(52);
+    var page3_shoe_right5 = __webpack_require__(40);
+    var page3_shoe_right4 = __webpack_require__(41);
+    var page3_shoe_right3 = __webpack_require__(42);
+    var page3_shoe_right2 = __webpack_require__(43);
+    var page3_shoe_right1 = __webpack_require__(44);
+    var chahua1 = __webpack_require__(7);
+    var chahua2 = __webpack_require__(18);
+    var chahua3 = __webpack_require__(27);
+    var chahua4 = __webpack_require__(28);
+    var chahua5 = __webpack_require__(29);
+    var chahua6 = __webpack_require__(30);
+    var chahua7 = __webpack_require__(31);
+    var chahua8 = __webpack_require__(32);
+    var chahua9 = __webpack_require__(33);
+    var chahua10 = __webpack_require__(8);
+    var chahua11 = __webpack_require__(9);
+    var chahua12 = __webpack_require__(10);
+    var chahua13 = __webpack_require__(11);
+    var chahua14 = __webpack_require__(12);
+    var chahua15 = __webpack_require__(13);
+    var chahua16 = __webpack_require__(14);
+    var chahua17 = __webpack_require__(15);
+    var chahua18 = __webpack_require__(16);
+    var chahua19 = __webpack_require__(17);
+    var chahua20 = __webpack_require__(19);
+    var chahua21 = __webpack_require__(20);
+    var chahua22 = __webpack_require__(21);
+    var chahua23 = __webpack_require__(22);
+    var chahua24 = __webpack_require__(23);
+    var chahua25 = __webpack_require__(24);
+    var chahua26 = __webpack_require__(25);
+    var chahua27 = __webpack_require__(26);
 
-    var page1_guiji = __webpack_require__(37);
-    var page1_xiezi = __webpack_require__(40);
-    var page1_yiner = __webpack_require__(41);
-    var page1_jiangbei = __webpack_require__(39);
-    var page1_huangguan = __webpack_require__(38);
-    var page2_jiangbei = __webpack_require__(0);
-    var page2_jb_left1 = __webpack_require__(0);
-    var page2_jb_left2 = __webpack_require__(0);
-    var page2_jb_left3 = __webpack_require__(0);
-    var page2_jb_left4 = __webpack_require__(0);
-    var page2_jb_left5 = __webpack_require__(0);
-    var page2_jb_left6 = __webpack_require__(0);
-    var page2_jb_right6 = __webpack_require__(0);
-    var page2_jb_right5 = __webpack_require__(0);
-    var page2_jb_right4 = __webpack_require__(0);
-    var page2_jb_right3 = __webpack_require__(0);
-    var page2_jb_right2 = __webpack_require__(0);
-    var page2_jb_right1 = __webpack_require__(0);
+    var home = __webpack_require__(5);
+    var back = __webpack_require__(6);
+    var bg = __webpack_require__(2);
+    var imgs = [
+        face0,face1,page1_guiji,page1_xiezi,page1_yiner,page1_jiangbei,page1_huangguan,
+        page2_jiangbeiCenter,page2_jb_left1,page2_jb_left2,page2_jb_left4,page3_shoeqian,
+        page3_shoe_left1,page3_shoe_left2,page3_shoe_left3,page3_shoe_left4,page3_shoe_left5,
+        page3_shoe_left6,page3_shoehou,page3_shoe_right6,page3_shoe_right5,page3_shoe_right4,
+        page3_shoe_right3,page3_shoe_right2,page3_shoe_right1,home,back,bg,chahua1,chahua2,chahua3,
+        chahua4,chahua5,chahua6,chahua7,chahua8,chahua9,chahua10,chahua11,chahua12,chahua13,chahua14,
+        chahua15,chahua16,chahua17,chahua18,chahua19,chahua20,chahua21,chahua22,chahua23,chahua24,
+        chahua25,chahua26,chahua27
+    ];
+    const len = imgs.length;
+    let count = 0;
+    for (let i = 0; i < len; i++) {
+        let imgObj = new Image();
+        imgObj.onload = imgObj.onerror = function (){
+            count++;
+            console.log(count);
+            if (count >= len){
+                __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.preload:first').hide();
+                return;
+            }
+            var process = ((count/len)*100).toFixed(2) + '%';
+            __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.process:first').text(process);
+        };
+        imgObj.src = imgs[i];
+    }
 
-    var page3_shoe1 = __webpack_require__(20);
-    var page3_shoe_left1 = __webpack_require__(8);
-    var page3_shoe_left2 = __webpack_require__(9);
-    var page3_shoe_left3 = __webpack_require__(10);
-    var page3_shoe_left4 = __webpack_require__(11);
-    var page3_shoe_left5 = __webpack_require__(12);
-    var page3_shoe_left6 = __webpack_require__(13);
-    var page3_shoe_right6 = __webpack_require__(19);
-    var page3_shoe_right5 = __webpack_require__(18);
-    var page3_shoe_right4 = __webpack_require__(17);
-    var page3_shoe_right3 = __webpack_require__(16);
-    var page3_shoe_right2 = __webpack_require__(15);
-    var page3_shoe_right1 = __webpack_require__(14);
-    var page3_shoe14 = __webpack_require__(21);
 
-    var home = __webpack_require__(6);
-    var back = __webpack_require__(7);
+
+
     var h5 = new __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js___default.a;
     h5
         .addPage('face')
             .addComponent('face',{
                 css: {
-                    margin: '0 auto',
+                    position: 'absolute',
                     backgroundSize:'contain',
-                    top: '6%',
+                    marginLeft: '-14rem',
+                    left: '50%',
+                    top: '13%',
                     width:'28rem',
                     height: '44rem'
                 },
@@ -12346,10 +12597,13 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
             })
             .addComponent('go',{
                 css: {
-                    margin: '15% auto 0 auto',
+                    position: 'absolute',
                     backgroundSize:'contain',
+                    left: '50%',
                     width:'24rem',
-                    height: '5rem'
+                    marginLeft: '-12rem',
+                    height: '5rem',
+                    bottom: '13%'
                 },
                 bg: face1,
                 onclick:function () {
@@ -12385,16 +12639,6 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(4);
                 }
              })
-            // .addComponent('empty',{
-            //     width: '137',
-            //     height: '182',
-            //     css: {
-            //         position: 'absolute',
-            //         top: '25%',
-            //         right: '10%',
-            //         zIndex:'10'
-            //     },
-            // })
             .addComponent('yiner',{
                 bg: page1_yiner,
 
@@ -12409,7 +12653,10 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     height: '9rem',
                 },
                 animateIn:{opacity:1,top: '20%',left: '30%'},
-                animateOut: {opacity:0,top: '20%',left: '30%'}
+                animateOut: {opacity:0,top: '20%',left: '30%'},
+                onclick:function () {
+                    __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(5);
+                }
             })
             .addComponent('jiangbei',{
                 bg: page1_jiangbei,
@@ -12436,7 +12683,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     backgroundSize:'100% 100%',
                     top: '18%',
                     left: '50%',
-                    marginLeft: '-110px',
+                    marginLeft: '-11rem',
                     zIndex:'3',
                     opacity: 0,
                     width: '22rem',
@@ -12453,13 +12700,17 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     position: 'absolute',
                     color: '#ffffff',
                     //textAlign: 'center',
-                    left:'19%',
-                    bottom: '10%'
-                }
+                    width: '100%',
+                    textAlign: 'center',
+                    bottom: '0%',
+                    opacity:0
+                },
+                animateIn:{opacity:1, bottom: '10%'},
+                animateOut: {opacity:0, bottom: '0%'},
             })
         .addPage('page2')
             .addComponent('zhongjian',{
-                bg: page2_jiangbei,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12495,7 +12746,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 }
             })
             .addComponent('zuo3',{
-                bg: page2_jb_left3,
+                bg: page2_jb_left2,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12519,7 +12770,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 }
             })
             .addComponent('zuo5',{
-                bg: page2_jb_left5,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12531,7 +12782,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 }
             })
             .addComponent('zuo6',{
-                bg: page2_jb_left6,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12543,7 +12794,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 }
             })
             .addComponent('you6',{
-                bg: page2_jb_right6,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12555,7 +12806,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 },
             })
             .addComponent('you5',{
-                bg: page2_jb_right5,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12567,7 +12818,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 }
             })
             .addComponent('you4',{
-                bg: page2_jb_right4,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12580,7 +12831,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
 
             })
             .addComponent('you3',{
-                bg: page2_jb_right3,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12592,7 +12843,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 }
             })
             .addComponent('you2',{
-                bg: page2_jb_right2,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12604,7 +12855,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 }
             })
             .addComponent('you1',{
-                bg: page2_jb_right1,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12616,14 +12867,18 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 }
             })
             .addComponent('text',{
-                text: '2015-2016赛季NBA总冠军1',
+                text: '2015-16赛季NBA总决赛MVP',
                 css: {
                     fontSize: '2rem',
-                    position: 'relative',
+                    position: 'absolute',
                     color: '#ffffff',
+                    width: '100%',
                     textAlign: 'center',
-                    top: '78%'
-                }
+                    opacity:0,
+                    top: '90%'
+                },
+                animateIn:{opacity:1, top: '78%'},
+                animateOut: {opacity:0, top: '100%'},
             })
             .addComponent('home',{
                 bg: home,
@@ -12640,32 +12895,14 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2);
                 }
             })
-            /*.addComponent('back',{
-                bg: back,
-                css: {
-                    margin: '0 auto',
-                    backgroundSize: 'contain',
-                    position: 'absolute',
-                    top: '2%',
-                    left:'2%',
-                    width: '7.6rem',
-                    height: '1.9rem'
-                },
-                onclick:function () {
-                    $.fn.fullpage.moveTo(2);
-                }
-            })*/
-
-            /* page3 */
         .addPage('page3')
             .addComponent('shoe1',{
-                bg: page3_shoe1,
+                bg: page3_shoeqian,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '42%',
+                    top: '40%',
                     left: '21%',
-                    // marginLeft: '-48px',
                     zIndex: '100',
                     width: '19.1rem',
                     height: '13rem',
@@ -12676,11 +12913,11 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '39%',
+                    top: '40%',
                     left: '7%',
                     zIndex: '95',
-                    width: '17.2rem',
-                    height: '16.7rem',
+                    width: '15rem',
+                    height: '14.5rem',
                 },
                 
                 
@@ -12690,11 +12927,11 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '36%',
-                    left: '1%',
+                    top: '38%',
+                    left: '4%',
                     zIndex: '90',
-                    width: '19.1rem',
-                    height: '9.95rem',
+                    width: '15rem',
+                    height: '7.8rem',
                 }
             })
           .addComponent('shoezuo3',{
@@ -12702,8 +12939,8 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '33%',
-                    left: '-3%',
+                    top: '34%',
+                    left: '0.1%',
                     zIndex: '85',
                     width: '16.8rem',
                     height: '8rem',
@@ -12714,8 +12951,8 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '30%',
-                    left: '-1%',
+                    top: '31%',
+                    left: '0.1%',
                     zIndex: '80',
                     width: '9.5rem',
                     height: '6.45rem',
@@ -12726,8 +12963,8 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '27%',
-                    left: '8%',
+                    top: '28%',
+                    left: '7%',
                     zIndex: '75',
                     width: '7.95rem',
                     height: '5.4rem',
@@ -12740,7 +12977,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '25%',
-                    left: '22%',
+                    left: '20%',
                     zIndex: '70',
                     width: '7.15rem',
                     height: '4.85rem',
@@ -12748,7 +12985,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 
             })
             .addComponent('shoehou',{
-                bg: page3_shoe14,
+                bg: page3_shoehou,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -12788,7 +13025,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '27%',
+                    top: '26.5%',
                     left: '66%',
                     zIndex: '80',
                     width: '9.45rem',
@@ -12801,7 +13038,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '30%',
-                    left: '65%',
+                    left: '63%',
                     zIndex: '85',
                     width: '11.75rem',
                     height: '8rem',
@@ -12812,11 +13049,11 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '33%',
-                    left: '57.5%',
+                    top: '35%',
+                    left: '65%',
                     zIndex: '90',
-                    width: '19.1rem',
-                    height: '9.95rem',
+                    width: '15rem',
+                    height: '7.8rem',
                 }
             })
             .addComponent('shoeyou1',{
@@ -12825,39 +13062,27 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '38%',
-                    left: '47%',
+                    left: '48%',
                     zIndex: '95',
-                    width: '17.2rem',
-                    height: '16.7rem',
+                    width: '15rem',
+                    height: '14.5rem',
                 }
             })
-            
             .addComponent('text',{
-                text: '2003 NIKE ZOOM GENERATION',
+                text: '2003 NIKE AIR ZOOM GENERATION',
                 css: {
-                    fontSize: '3.2em',
-                    position: 'relative',
+                    fontSize: '2rem',
+                    position: 'absolute',
+                    width: '100%',
                     color: 'white',
                     textAlign: 'center',
-                    top: '73%'
-                }
-            })
-            
-            /*.addComponent('back',{
-                bg: back,
-                css: {
-                    margin: '0 auto',
-                    backgroundSize: 'contain',
-                    position: 'absolute',
-                    top: '2%',
-                    left:'2%',
-                    width: '7.6rem',
-                    height: '1.9rem'
+                    //padding:'0 1rem',
+                    top: '75%',
+                    opacity:0
                 },
-                onclick:function () {
-                    $.fn.fullpage.moveTo(2);
-                }
-            })*/
+                animateIn:{opacity:1, top: '75%'},
+                animateOut: {opacity:0, top: '100%'},
+            })
             .addComponent('home',{
                 bg: home,                
                 css: {
@@ -12873,16 +13098,449 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                          __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
                     }
             })
-    .loader(4);
-    __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js___default()();
-    __WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js___default()();
+        .addPage('illusion1')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion2')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion3')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion4')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion5')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion6')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion7')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion8')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion9')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion10')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion11')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion12')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion13')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion14')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion15')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion16')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion17')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion18')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion19')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion20')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion21')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion22')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion23')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion24')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion25')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion26')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+        .addPage('illusion27')
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+
+    .loader();
+    __WEBPACK_IMPORTED_MODULE_7__src_components_page_2_js_page2_js___default()();
+    __WEBPACK_IMPORTED_MODULE_8__src_components_page_3_js_page3_js___default()();
 
 });
 
 
 
 /***/ }),
-/* 43 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12941,133 +13599,161 @@ function H5ComponentBase(name, cfg) {
 }
 
 /***/ }),
-/* 44 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "#jbdetail {\n  position: fixed;\n  display: none;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  z-index: 999;\n}\n#jbdetail #jb {\n  position: absolute;\n  width: 15.7rem;\n  height: 28.3rem;\n  top: 50%;\n  left: 50%;\n  margin: -17rem 0 0 -7.8rem;\n}\n#jbdetail #home {\n  position: absolute;\n  width: 4.6rem;\n  height: 4.6rem;\n  background-size: contain;\n  margin-left: -2.3rem;\n  left: 50%;\n  bottom: 5%;\n  background-image: url(" + __webpack_require__(6) + ");\n}\n#jbdetail #back {\n  position: absolute;\n  width: 7.6rem;\n  height: 1.9rem;\n  background-size: contain;\n  margin: 0 auto;\n  top: 2%;\n  left: 2%;\n  background-image: url(" + __webpack_require__(7) + ");\n}\n#jbdetail #desc {\n  position: absolute;\n  width: 100%;\n  bottom: 21%;\n  -webkit-animation: fadeInUp 1s ease 1 both;\n          animation: fadeInUp 1s ease 1 both;\n}\n#jbdetail #desc .title {\n  font-size: 2.5rem;\n  text-align: center;\n  padding: 0 5rem;\n  line-height: 3.5rem;\n}\n#jbdetail #desc .content {\n  font-size: 1.5rem;\n  padding: 0 3rem;\n  line-height: 2rem;\n}\n", ""]);
+exports.push([module.i, "#jbdetail {\n  position: fixed;\n  display: none;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(2) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  z-index: 999;\n}\n#jbdetail #jb {\n  position: absolute;\n  width: 15.7rem;\n  height: 28.3rem;\n  top: 50%;\n  left: 50%;\n  margin: -17rem 0 0 -7.8rem;\n}\n#jbdetail #home {\n  position: absolute;\n  width: 4.6rem;\n  height: 4.6rem;\n  background-size: contain;\n  margin-left: -2.3rem;\n  left: 50%;\n  bottom: 5%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n}\n#jbdetail #back {\n  position: absolute;\n  width: 7.6rem;\n  height: 1.9rem;\n  background-size: contain;\n  top: 2%;\n  left: 2%;\n  background-image: url(" + __webpack_require__(6) + ");\n}\n#jbdetail #desc {\n  position: absolute;\n  width: 100%;\n  bottom: 12%;\n  -webkit-animation: fadeInUp 1s ease 1 both;\n          animation: fadeInUp 1s ease 1 both;\n}\n#jbdetail #desc .title {\n  font-size: 1.5rem;\n  text-align: center;\n  padding: 0 5rem;\n  line-height: 2.5rem;\n}\n#jbdetail #desc .content {\n  font-size: 1rem;\n  padding: 0 3rem;\n  line-height: 1.5rem;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 45 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "#shoedetail {\n  position: fixed;\n  display: none;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  z-index: 999;\n}\n#shoedetail #shoedisplay {\n  position: absolute;\n  -webkit-transform: rotate(-30deg);\n      -ms-transform: rotate(-30deg);\n          transform: rotate(-30deg);\n  width: 30rem;\n  height: 20.4rem;\n  top: 51%;\n  left: 26%;\n  margin: -17rem 0 0 -7.8rem;\n}\n#shoedetail #shoehome {\n  position: absolute;\n  width: 4.6rem;\n  height: 4.6rem;\n  background-size: contain;\n  margin-left: -2.3rem;\n  left: 50%;\n  bottom: 5%;\n  background-image: url(" + __webpack_require__(6) + ");\n}\n#shoedetail #shoeback {\n  position: absolute;\n  width: 7.6rem;\n  height: 1.9rem;\n  background-size: contain;\n  margin: 0 auto;\n  top: 2%;\n  left: 2%;\n  background-image: url(" + __webpack_require__(7) + ");\n}\n#shoedetail #shoetext {\n  position: absolute;\n  width: 100%;\n  bottom: 20%;\n  -webkit-animation: fadeInUp 1s ease 1 both;\n          animation: fadeInUp 1s ease 1 both;\n}\n#shoedetail #shoetext .shoetitle {\n  font-size: 2.3rem;\n  font-family: Arial;\n  text-align: center;\n  padding: 0 5rem;\n  line-height: 3.5rem;\n}\n#shoedetail #shoetext .shoecontent {\n  font-size: 1.6rem;\n  font-family: 黑体;\n  padding: 0 3rem;\n  line-height: 2rem;\n}\n", ""]);
+exports.push([module.i, ".preload {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  left: 0;\n  top: 0;\n  text-align: center;\n  background-color: #eee;\n  z-index: 9999;\n  font-size: 1.5rem;\n  padding-top: 25rem;\n}\n.preload .loading {\n  width: 5rem;\n  height: 5rem;\n  position: relative;\n  margin: 0 auto;\n}\n.preload .loading .process {\n  position: relative;\n  width: 100%;\n  text-align: center;\n  color: #000;\n  font-size: 1.5rem;\n  top: 5.5rem;\n}\n.preload .loading .circle2,\n.preload .loading .circle1 {\n  position: absolute;\n  width: 5rem;\n  height: 5rem;\n  background-color: darkblue;\n  border-radius: 50% 50%;\n  -webkit-animation-timing-function: ease-in-out;\n          animation-timing-function: ease-in-out;\n}\n.preload .loading .circle1 {\n  opacity: 0.7;\n  -webkit-animation: loading1 2s infinite;\n          animation: loading1 2s infinite;\n}\n.preload .loading .circle2 {\n  opacity: 0.9;\n  -webkit-transform: scale(0);\n      -ms-transform: scale(0);\n          transform: scale(0);\n  -webkit-animation: loading2 2s infinite;\n          animation: loading2 2s infinite;\n}\n@-webkit-keyframes loading1 {\n  0% {\n    opacity: 0.7;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 0.9;\n    -webkit-transform: scale(0);\n            transform: scale(0);\n  }\n}\n@keyframes loading1 {\n  0% {\n    opacity: 0.7;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 0.9;\n    -webkit-transform: scale(0);\n            transform: scale(0);\n  }\n}\n@-webkit-keyframes loading2 {\n  0% {\n    opacity: 0.9;\n    -webkit-transform: scale(0);\n            transform: scale(0);\n  }\n  50% {\n    opacity: 0.7;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n}\n@keyframes loading2 {\n  0% {\n    opacity: 0.9;\n    -webkit-transform: scale(0);\n            transform: scale(0);\n  }\n  50% {\n    opacity: 0.7;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 46 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".h5_page_face {\n  background-color: #454545;\n}\n", ""]);
+exports.push([module.i, "#shoedetail {\n  position: fixed;\n  display: none;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(2) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  z-index: 999;\n}\n#shoedetail #shoedisplay {\n  position: absolute;\n  -webkit-transform: rotate(-30deg);\n      -ms-transform: rotate(-30deg);\n          transform: rotate(-30deg);\n  width: 28rem;\n  height: 19.04rem;\n  top: 52%;\n  left: 25%;\n  margin: -17rem 0 0 -7.8rem;\n}\n#shoedetail #shoehome {\n  position: absolute;\n  width: 4.6rem;\n  height: 4.6rem;\n  background-size: contain;\n  margin-left: -2.3rem;\n  left: 50%;\n  bottom: 5%;\n  background-image: url(" + __webpack_require__(5) + ");\n}\n#shoedetail #shoeback {\n  position: absolute;\n  width: 7.6rem;\n  height: 1.9rem;\n  background-size: contain;\n  margin: 0 auto;\n  top: 2%;\n  left: 2%;\n  background-image: url(" + __webpack_require__(6) + ");\n}\n#shoedetail #shoetext {\n  position: absolute;\n  width: 100%;\n  bottom: 15%;\n  -webkit-animation: fadeInUp 1s ease 1 both;\n          animation: fadeInUp 1s ease 1 both;\n}\n#shoedetail #shoetext .shoetitle {\n  font-size: 1.5rem;\n  font-family: Arial;\n  text-align: center;\n  padding: 0 5rem;\n  line-height: 2.5rem;\n}\n#shoedetail #shoetext .shoecontent {\n  font-size: 1rem;\n  font-family: 黑体;\n  padding: 0 3rem;\n  line-height: 1.5rem;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 47 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".h5_page_page1 {\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n}\n.h5_page_page1 .h5_component_name_xiezi {\n  -webkit-animation-name: xiezi_move;\n          animation-name: xiezi_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes xiezi_move {\n  0% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  24% {\n    top: 13%;\n    right: -120px;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  48% {\n    top: 30%;\n    right: 46%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  60% {\n    top: 44%;\n    right: 70%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  80% {\n    top: 56%;\n    right: 46%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 10;\n  }\n  100% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n@keyframes xiezi_move {\n  0% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  24% {\n    top: 13%;\n    right: -120px;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  48% {\n    top: 30%;\n    right: 46%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  60% {\n    top: 44%;\n    right: 70%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  80% {\n    top: 56%;\n    right: 46%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 10;\n  }\n  100% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n.h5_page_page1 .h5_component_name_jiangbei {\n  -webkit-animation-name: jiangbei_move;\n          animation-name: jiangbei_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes jiangbei_move {\n  0% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  15% {\n    top: 30%;\n    left: 28%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  30% {\n    top: 30%;\n    left: 53%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  40% {\n    top: 38%;\n    left: 78%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  52% {\n    top: 42%;\n    left: 84%;\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8);\n    z-index: 0;\n  }\n  75% {\n    top: 52%;\n    left: 53%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  85% {\n    top: 45%;\n    left: 29%;\n    -webkit-transform: scale(1.5);\n            transform: scale(1.5);\n    z-index: 10;\n  }\n  100% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n@keyframes jiangbei_move {\n  0% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  15% {\n    top: 30%;\n    left: 28%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  30% {\n    top: 30%;\n    left: 53%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  40% {\n    top: 38%;\n    left: 78%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  52% {\n    top: 42%;\n    left: 84%;\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8);\n    z-index: 0;\n  }\n  75% {\n    top: 52%;\n    left: 53%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  85% {\n    top: 45%;\n    left: 29%;\n    -webkit-transform: scale(1.5);\n            transform: scale(1.5);\n    z-index: 10;\n  }\n  100% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n.h5_page_page1 .h5_component_name_yiner {\n  -webkit-animation-name: yiner_move;\n          animation-name: yiner_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes yiner_move {\n  0% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  13% {\n    top: 33%;\n    left: 58%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  23% {\n    top: 45%;\n    left: 82%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  33% {\n    top: 54%;\n    left: 82%;\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n    z-index: 0;\n  }\n  43% {\n    top: 68%;\n    left: 73%;\n    -webkit-transform: scale(1.8);\n            transform: scale(1.8);\n    z-index: 0;\n  }\n  53% {\n    top: 62%;\n    left: 58%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  68% {\n    top: 50%;\n    left: 29%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  83% {\n    top: 30%;\n    left: 10%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  100% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n}\n@keyframes yiner_move {\n  0% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  13% {\n    top: 33%;\n    left: 58%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  23% {\n    top: 45%;\n    left: 82%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  33% {\n    top: 54%;\n    left: 82%;\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n    z-index: 0;\n  }\n  43% {\n    top: 68%;\n    left: 73%;\n    -webkit-transform: scale(1.8);\n            transform: scale(1.8);\n    z-index: 0;\n  }\n  53% {\n    top: 62%;\n    left: 58%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  68% {\n    top: 50%;\n    left: 29%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  83% {\n    top: 30%;\n    left: 10%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  100% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n}\n", ""]);
+exports.push([module.i, ".h5_page_face {\n  background-image: url(" + __webpack_require__(2) + ");\n  background-size: cover;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 48 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".h5_page_page2 {\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n}\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n", ""]);
+exports.push([module.i, ".h5_page_illusion1 {\n  background-image: url(" + __webpack_require__(7) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion2 {\n  background-image: url(" + __webpack_require__(18) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion3 {\n  background-image: url(" + __webpack_require__(27) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion4 {\n  background-image: url(" + __webpack_require__(28) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion5 {\n  background-image: url(" + __webpack_require__(29) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion6 {\n  background-image: url(" + __webpack_require__(30) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion7 {\n  background-image: url(" + __webpack_require__(31) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion8 {\n  background-image: url(" + __webpack_require__(32) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion9 {\n  background-image: url(" + __webpack_require__(33) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion10 {\n  background-image: url(" + __webpack_require__(8) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion11 {\n  background-image: url(" + __webpack_require__(9) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion12 {\n  background-image: url(" + __webpack_require__(10) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion13 {\n  background-image: url(" + __webpack_require__(11) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion14 {\n  background-image: url(" + __webpack_require__(12) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion15 {\n  background-image: url(" + __webpack_require__(13) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion16 {\n  background-image: url(" + __webpack_require__(14) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion17 {\n  background-image: url(" + __webpack_require__(15) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion18 {\n  background-image: url(" + __webpack_require__(16) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion19 {\n  background-image: url(" + __webpack_require__(17) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion20 {\n  background-image: url(" + __webpack_require__(19) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion21 {\n  background-image: url(" + __webpack_require__(20) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion22 {\n  background-image: url(" + __webpack_require__(21) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion23 {\n  background-image: url(" + __webpack_require__(22) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion24 {\n  background-image: url(" + __webpack_require__(23) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion25 {\n  background-image: url(" + __webpack_require__(24) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion26 {\n  background-image: url(" + __webpack_require__(25) + ");\n  background-size: 100% 100%;\n}\n.h5_page_illusion27 {\n  background-image: url(" + __webpack_require__(26) + ");\n  background-size: 100% 100%;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 49 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".h5_page_page3 {\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n}\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n", ""]);
+exports.push([module.i, ".h5_page_page1 {\n  background-image: url(" + __webpack_require__(2) + ");\n  background-size: cover;\n}\n.h5_page_page1 .h5_component_name_xiezi {\n  -webkit-animation-name: xiezi_move;\n          animation-name: xiezi_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes xiezi_move {\n  0% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  24% {\n    top: 13%;\n    right: -120px;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  48% {\n    top: 30%;\n    right: 46%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  60% {\n    top: 44%;\n    right: 70%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  80% {\n    top: 56%;\n    right: 46%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 10;\n  }\n  100% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n@keyframes xiezi_move {\n  0% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  24% {\n    top: 13%;\n    right: -120px;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  48% {\n    top: 30%;\n    right: 46%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  60% {\n    top: 44%;\n    right: 70%;\n    -webkit-transform: scale(0.4);\n            transform: scale(0.4);\n    z-index: 0;\n  }\n  80% {\n    top: 56%;\n    right: 46%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 10;\n  }\n  100% {\n    top: 40%;\n    right: 0;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n.h5_page_page1 .h5_component_name_jiangbei {\n  -webkit-animation-name: jiangbei_move;\n          animation-name: jiangbei_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes jiangbei_move {\n  0% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  15% {\n    top: 30%;\n    left: 28%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  30% {\n    top: 30%;\n    left: 53%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  40% {\n    top: 38%;\n    left: 78%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  52% {\n    top: 42%;\n    left: 84%;\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8);\n    z-index: 0;\n  }\n  75% {\n    top: 52%;\n    left: 53%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  85% {\n    top: 45%;\n    left: 29%;\n    -webkit-transform: scale(1.5);\n            transform: scale(1.5);\n    z-index: 10;\n  }\n  100% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n@keyframes jiangbei_move {\n  0% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n  15% {\n    top: 30%;\n    left: 28%;\n    -webkit-transform: scale(0.6);\n            transform: scale(0.6);\n    z-index: 0;\n  }\n  30% {\n    top: 30%;\n    left: 53%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  40% {\n    top: 38%;\n    left: 78%;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n    z-index: 0;\n  }\n  52% {\n    top: 42%;\n    left: 84%;\n    -webkit-transform: scale(0.8);\n            transform: scale(0.8);\n    z-index: 0;\n  }\n  75% {\n    top: 52%;\n    left: 53%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  85% {\n    top: 45%;\n    left: 29%;\n    -webkit-transform: scale(1.5);\n            transform: scale(1.5);\n    z-index: 10;\n  }\n  100% {\n    top: 30%;\n    left: -50px;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 10;\n  }\n}\n.h5_page_page1 .h5_component_name_yiner {\n  -webkit-animation-name: yiner_move;\n          animation-name: yiner_move;\n  -webkit-animation-duration: 13s;\n          animation-duration: 13s;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  /*无限循环*/\n  -webkit-animation-timing-function: linear;\n          animation-timing-function: linear;\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n@-webkit-keyframes yiner_move {\n  0% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  13% {\n    top: 33%;\n    left: 58%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  23% {\n    top: 45%;\n    left: 82%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  33% {\n    top: 54%;\n    left: 82%;\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n    z-index: 0;\n  }\n  43% {\n    top: 68%;\n    left: 73%;\n    -webkit-transform: scale(1.8);\n            transform: scale(1.8);\n    z-index: 0;\n  }\n  53% {\n    top: 62%;\n    left: 58%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  68% {\n    top: 50%;\n    left: 29%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  83% {\n    top: 30%;\n    left: 10%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  100% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n}\n@keyframes yiner_move {\n  0% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  13% {\n    top: 33%;\n    left: 58%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  23% {\n    top: 45%;\n    left: 82%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n  33% {\n    top: 54%;\n    left: 82%;\n    -webkit-transform: scale(1.3);\n            transform: scale(1.3);\n    z-index: 0;\n  }\n  43% {\n    top: 68%;\n    left: 73%;\n    -webkit-transform: scale(1.8);\n            transform: scale(1.8);\n    z-index: 0;\n  }\n  53% {\n    top: 62%;\n    left: 58%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  68% {\n    top: 50%;\n    left: 29%;\n    -webkit-transform: scale(2.4);\n            transform: scale(2.4);\n    z-index: 10;\n  }\n  83% {\n    top: 30%;\n    left: 10%;\n    -webkit-transform: scale(1.2);\n            transform: scale(1.2);\n    z-index: 10;\n  }\n  100% {\n    top: 20%;\n    left: 30%;\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    z-index: 0;\n  }\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 50 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "/* H5对象的全局样式 */\nbody{\n    padding: 0;\n    margin: 0;\n}\n.h5{\n    height: 100%;\n}\n.h5_page{\n    position: relative;\n    width: 100%;\n    height: 100%;\n    background-color: #ddd;\n    background-size: 100%;\n    background-repeat: no-repeat;\n    overflow: hidden;\n}\n", ""]);
+exports.push([module.i, ".h5_page_page2 {\n  background-image: url(" + __webpack_require__(2) + ");\n  background-size: cover;\n}\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 51 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "/* 基本图文组件样式 */\n.h5_component{\n    background-size: 100%;\n    background-repeat: no-repeat;\n    position: relative;\n    font-family: Arial,黑体;\n}", ""]);
+exports.push([module.i, ".h5_page_page3 {\n  background-image: url(" + __webpack_require__(2) + ");\n  background-size: cover;\n}\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 52 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(0)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "body,html {\r\n    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;\r\n    color: #ffffff;\r\n    letter-spacing: 2px;\r\n    font-size: 62.5%;\r\n}", ""]);
+exports.push([module.i, "/* H5对象的全局样式 */\r\nbody{\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n.h5{\r\n    height: 100%;\r\n}\r\n.h5_page{\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: #ddd;\r\n    background-size: 100%;\r\n    background-repeat: no-repeat;\r\n    overflow: hidden;\r\n}\r\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 53 */
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/* 基本图文组件样式 */\r\n.h5_component{\r\n    background-size: 100%;\r\n    background-repeat: no-repeat;\r\n    position: relative;\r\n    font-family: Arial,黑体;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "body,html {\r\n    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;\r\n    color: #ffffff;\r\n    letter-spacing: 2px;\r\n    font-size: 62.5%;\r\n}\r\n@media screen and (min-device-height:700px) {\r\n    html, body {\r\n        font-size: 78%;\r\n    }\r\n}\r\n@media screen and (min-device-height:800px) {\r\n    html, body {\r\n        font-size: 130%;\r\n    }\r\n}\r\n@media screen and (max-device-height:570px) {\r\n    html, body {\r\n        font-size: 50%;\r\n    }\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -16199,7 +16885,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 54 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;( function( factory ) {
@@ -16225,7 +16911,7 @@ return $.ui.version = "1.12.1";
 
 
 /***/ }),
-/* 55 */
+/* 90 */
 /***/ (function(module, exports) {
 
 
@@ -16321,4 +17007,3 @@ module.exports = function (css) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.bundle.js.map
