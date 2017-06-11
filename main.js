@@ -333,7 +333,7 @@ $(function(){
                 }
             })
     .loader(3);
-    rotate();//
+    rotate();
 
 });
 
