@@ -10,12 +10,16 @@ import './src/common/style/H5.css';
 import './src/common/style/base.css';
 import './src/common/style/H5ComponentBase.css';
 import rotate from './src/components/page_2/js/page2.js';
+import rotateshoe from './src/components/page_3/js/page3.js';
+import './src/common/js/huadong.js';
 import './src/common/style/detail.less';
+import './src/common/style/shoedetail.less';
 
 window.jQuery = window.$ = require('jquery');
 import './src/components/face/style/face.less';
 import './src/components/page_1/style/page1.less';
 import './src/components/page_2/style/page2.less';
+import './src/components/page_3/style/page3.less';
 
 $(function(){
     var face0 = require('./src/components/face/img/face.png');
@@ -39,7 +43,24 @@ $(function(){
     var page2_jb_right3 = require('./src/components/page_2/img/jb_left1.png');
     var page2_jb_right2 = require('./src/components/page_2/img/jb_left1.png');
     var page2_jb_right1 = require('./src/components/page_2/img/jb_left1.png');
+
+    var page3_shoe1 = require('./src/components/page_3/img/shoe0.png');
+    var page3_shoe_left1 = require('./src/components/page_3/img/shoe-left-1.png');
+    var page3_shoe_left2 = require('./src/components/page_3/img/shoe-left-2.png');
+    var page3_shoe_left3 = require('./src/components/page_3/img/shoe-left-3.png');
+    var page3_shoe_left4 = require('./src/components/page_3/img/shoe-left-4.png');
+    var page3_shoe_left5 = require('./src/components/page_3/img/shoe-left-5.png');
+    var page3_shoe_left6 = require('./src/components/page_3/img/shoe-left-6.png');
+    var page3_shoe_right6 = require('./src/components/page_3/img/shoe-right-6.png');
+    var page3_shoe_right5 = require('./src/components/page_3/img/shoe-right-5.png');
+    var page3_shoe_right4 = require('./src/components/page_3/img/shoe-right-4.png');
+    var page3_shoe_right3 = require('./src/components/page_3/img/shoe-right-3.png');
+    var page3_shoe_right2 = require('./src/components/page_3/img/shoe-right-2.png');
+    var page3_shoe_right1 = require('./src/components/page_3/img/shoe-right-1.png');
+    var page3_shoe14 = require('./src/components/page_3/img/shoe14.png');
+
     var home = require('./src/components/page_2/img/home.png');
+    var back = require('./src/components/page_3/img/back.png');
     var h5 = new H5;
     h5
         .addPage('face')
@@ -60,7 +81,10 @@ $(function(){
                     width:'24rem',
                     height: '5rem'
                 },
-                bg: face1
+                bg: face1,
+                onclick:function () {
+                    $.fn.fullpage.moveTo(2);
+                }
             })
         .addPage('page1')
             .addComponent('guiji',{
@@ -86,7 +110,10 @@ $(function(){
                     height: '23rem',
                 },
                 animateIn:{opacity:1,top: '42%', right: '0%',},
-                animateOut: {opacity:0,top: '42%', right: '0%',}
+                animateOut: {opacity:0,top: '42%', right: '0%',},
+                onclick:function () {
+                    $.fn.fullpage.moveTo(4);
+                }
              })
             // .addComponent('empty',{
             //     width: '137',
@@ -148,6 +175,17 @@ $(function(){
                 animateIn:{opacity:1, top: '30%'},
                 animateOut: {opacity:0, top: '18%'},
 
+            })
+            .addComponent('text',{
+                text: 'LBJ宇宙开启皇帝专属旅程',
+                css: {
+                    fontSize: '2rem',
+                    position: 'absolute',
+                    color: '#ffffff',
+                    //textAlign: 'center',
+                    left:'19%',
+                    bottom: '10%'
+                }
             })
         .addPage('page2')
             .addComponent('zhongjian',{
@@ -332,8 +370,244 @@ $(function(){
                     $.fn.fullpage.moveTo(2);
                 }
             })
-    .loader(3);
-    rotate();//
+            /*.addComponent('back',{
+                bg: back,
+                css: {
+                    margin: '0 auto',
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '2%',
+                    left:'2%',
+                    width: '7.6rem',
+                    height: '1.9rem'
+                },
+                onclick:function () {
+                    $.fn.fullpage.moveTo(2);
+                }
+            })*/
+
+            /* page3 */
+        .addPage('page3')
+            .addComponent('shoe1',{
+                bg: page3_shoe1,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '42%',
+                    left: '21%',
+                    // marginLeft: '-48px',
+                    zIndex: '100',
+                    width: '19.1rem',
+                    height: '13rem',
+                }                
+            })
+            .addComponent('shoezuo1',{
+                bg: page3_shoe_left1,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '39%',
+                    left: '7%',
+                    zIndex: '95',
+                    width: '17.2rem',
+                    height: '16.7rem',
+                },
+                
+                
+            })
+            .addComponent('shoezuo2',{
+                bg: page3_shoe_left2,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '36%',
+                    left: '1%',
+                    zIndex: '90',
+                    width: '19.1rem',
+                    height: '9.95rem',
+                }
+            })
+          .addComponent('shoezuo3',{
+                bg: page3_shoe_left3,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '33%',
+                    left: '-3%',
+                    zIndex: '85',
+                    width: '16.8rem',
+                    height: '8rem',
+                }
+            })
+            .addComponent('shoezuo4',{
+                bg: page3_shoe_left4,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '30%',
+                    left: '-1%',
+                    zIndex: '80',
+                    width: '9.5rem',
+                    height: '6.45rem',
+                }
+            })
+            .addComponent('shoezuo5',{
+                bg: page3_shoe_left5,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '27%',
+                    left: '8%',
+                    zIndex: '75',
+                    width: '7.95rem',
+                    height: '5.4rem',
+                }
+                
+            })
+            .addComponent('shoezuo6',{
+                bg: page3_shoe_left6,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '25%',
+                    left: '22%',
+                    zIndex: '70',
+                    width: '7.15rem',
+                    height: '4.85rem',
+                }
+                
+            })
+            .addComponent('shoehou',{
+                bg: page3_shoe14,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '24%',
+                    left: '38%',
+                    zIndex: '65',
+                    width: '6.7rem',
+                    height: '4.5rem',
+                }
+            })
+          .addComponent('shoeyou6',{
+                bg: page3_shoe_right6,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '24%',
+                    left: '50%',
+                    zIndex: '70',
+                    width: '7.15rem',
+                    height: '4.85rem',
+                }
+            })
+         .addComponent('shoeyou5',{
+                bg: page3_shoe_right5,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '25%',
+                    left: '60%',
+                    zIndex: '75',
+                    width: '7.95rem',
+                    height: '5.4rem',
+                },                               
+            })
+            .addComponent('shoeyou4',{
+                bg: page3_shoe_right4,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '27%',
+                    left: '66%',
+                    zIndex: '80',
+                    width: '9.45rem',
+                    height: '6.45rem',
+                }
+            })
+            .addComponent('shoeyou3',{
+                bg: page3_shoe_right3,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '30%',
+                    left: '65%',
+                    zIndex: '85',
+                    width: '11.75rem',
+                    height: '8rem',
+                }
+            })
+            .addComponent('shoeyou2',{
+                bg: page3_shoe_right2,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '33%',
+                    left: '57.5%',
+                    zIndex: '90',
+                    width: '19.1rem',
+                    height: '9.95rem',
+                }
+            })
+            .addComponent('shoeyou1',{
+                bg: page3_shoe_right1,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '38%',
+                    left: '47%',
+                    zIndex: '95',
+                    width: '17.2rem',
+                    height: '16.7rem',
+                }
+            })
+            
+            .addComponent('text',{
+                text: '2003 NIKE ZOOM GENERATION',
+                css: {
+                    fontSize: '3.2em',
+                    position: 'relative',
+                    color: 'white',
+                    textAlign: 'center',
+                    top: '73%'
+                }
+            })
+            
+            /*.addComponent('back',{
+                bg: back,
+                css: {
+                    margin: '0 auto',
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '2%',
+                    left:'2%',
+                    width: '7.6rem',
+                    height: '1.9rem'
+                },
+                onclick:function () {
+                    $.fn.fullpage.moveTo(2);
+                }
+            })*/
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         $.fn.fullpage.moveTo(2)
+                    }
+            })
+
+    .loader(4);
+    rotate();
+    rotateshoe();
+    
 
 });
 

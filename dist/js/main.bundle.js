@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 23);
+/******/ 	return __webpack_require__(__webpack_require__.s = 42);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -192,7 +192,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(34);
+	fixUrls = __webpack_require__(55);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -10720,10 +10720,163 @@ module.exports = __webpack_require__.p + "img/cfc92ab3.bg.png";
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/2cdfb924.home.png";
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.mobilwmtouch = mobilwmtouch;
+exports.evenzc = evenzc;
+function mobilwmtouch(obj) {
+    var stoux, stouy;
+    var etoux, etouy;
+    var xdire, ydire;
+    obj.addEventListener("touchstart", function (e) {
+        stoux = e.targetTouches[0].clientX;
+        stouy = e.targetTouches[0].clientY;
+        //console.log(stoux);
+    }, false);
+    obj.addEventListener("touchend", function (e) {
+        etoux = e.changedTouches[0].clientX;
+        etouy = e.changedTouches[0].clientY;
+        xdire = etoux - stoux;
+        ydire = etouy - stouy;
+        var chazhi = Math.abs(xdire) - Math.abs(ydire);
+        if (xdire > 0 && chazhi > 0) {
+            obj.dispatchEvent(evenzc('touright'));
+        } else if (ydire > 0 && chazhi < 0) {
+            obj.dispatchEvent(evenzc('toudown'));
+        } else if (xdire < 0 && chazhi > 0) {
+            obj.dispatchEvent(evenzc('touleft'));
+        } else if (ydire < 0 && chazhi < 0) {
+            obj.dispatchEvent(evenzc('touup'));
+        }
+    }, false);
+}
+
+function evenzc(eve) {
+    // if (typeof document.CustomEvent === 'function') {
+    //     this.event = new document.CustomEvent(eve, {//自定义事件名称
+    //         bubbles: false,//是否冒泡
+    //         cancelable: false//是否可以停止捕获
+    //     });
+    //     if (!document["evetself" + eve]) {
+    //         document["evetself" + eve] = this.event;
+    //     }
+    // } else if (typeof document.createEvent === 'function') {
+    //     this.event = document.createEvent('HTMLEvents');
+    //     this.event.initEvent(eve, false, false);
+    //     if (!document["evetself" + eve]) {
+    //         document["evetself" + eve] = this.event;
+    //     }
+    // } else {
+    //     return false;
+    // }
+    // return document["evetself" + eve];
+    var event = document.createEvent("CustomEvent");
+    event.initCustomEvent(eve, false, false, 1);
+    return event;
+};
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/2cdfb924.home.png";
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/a5ddb944.back.png";
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-left-1.png";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-left-2.png";
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-left-3.png";
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-left-4.png";
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-left-5.png";
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-left-6.png";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-right-1.png";
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-right-2.png";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-right-3.png";
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-right-4.png";
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-right-5.png";
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe-right-6.png";
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe0.png";
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/81aee241.shoe14.png";
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10733,11 +10886,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _H5ComponentBase = __webpack_require__(24);
+var _H5ComponentBase = __webpack_require__(43);
 
 var _H5ComponentBase2 = _interopRequireDefault(_H5ComponentBase);
 
-var _fullpage = __webpack_require__(32);
+var _fullpage = __webpack_require__(53);
 
 var _fullpage2 = _interopRequireDefault(_fullpage);
 
@@ -10825,7 +10978,6 @@ function H5() {
         this.el.fullpage({
             onLeave: function onLeave(index, nextIndex, direction) {
                 $(this).find('.h5_component').trigger('onLeave');
-                // rotate();
             },
             afterLoad: function afterLoad(anchorLink, index) {
                 $(this).find('.h5_component').trigger('onLoad');
@@ -10842,7 +10994,7 @@ function H5() {
 }
 
 /***/ }),
-/* 7 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10851,6 +11003,9 @@ function H5() {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _huadong = __webpack_require__(5);
+
 /**
  * Created by 文利 on 2017/5/4.
  */
@@ -10882,12 +11037,16 @@ function rotate() {
             $('#desc .content:first').text(src[i][2]);
         });
     });
+    $("#home").on('click', function () {
+        jbDetailClose();
+        $.fn.fullpage.moveTo(2);
+    });
     $("#back").on('click', function () {
         jbDetailClose();
     });
     //    $('.h5_page_page2').click(anima);
     var dom = $('.h5_page_page2').get(0);
-    mobilwmtouch(dom);
+    (0, _huadong.mobilwmtouch)(dom);
     dom.addEventListener('touright', function (e) {
         animaRight();
         return false;
@@ -10935,60 +11094,11 @@ function rotate() {
             });
         }
     }
-    function mobilwmtouch(obj) {
-        var stoux, stouy;
-        var etoux, etouy;
-        var xdire, ydire;
-        obj.addEventListener("touchstart", function (e) {
-            stoux = e.targetTouches[0].clientX;
-            stouy = e.targetTouches[0].clientY;
-            //console.log(stoux);
-        }, false);
-        obj.addEventListener("touchend", function (e) {
-            etoux = e.changedTouches[0].clientX;
-            etouy = e.changedTouches[0].clientY;
-            xdire = etoux - stoux;
-            ydire = etouy - stouy;
-            var chazhi = Math.abs(xdire) - Math.abs(ydire);
-            if (xdire > 0 && chazhi > 0) {
-                obj.dispatchEvent(evenzc('touright'));
-            } else if (ydire > 0 && chazhi < 0) {
-                obj.dispatchEvent(evenzc('toudown'));
-            } else if (xdire < 0 && chazhi > 0) {
-                obj.dispatchEvent(evenzc('touleft'));
-            } else if (ydire < 0 && chazhi < 0) {
-                obj.dispatchEvent(evenzc('touup'));
-            }
-        }, false);
 
-        function evenzc(eve) {
-            // if (typeof document.CustomEvent === 'function') {
-            //     this.event = new document.CustomEvent(eve, {//自定义事件名称
-            //         bubbles: false,//是否冒泡
-            //         cancelable: false//是否可以停止捕获
-            //     });
-            //     if (!document["evetself" + eve]) {
-            //         document["evetself" + eve] = this.event;
-            //     }
-            // } else if (typeof document.createEvent === 'function') {
-            //     this.event = document.createEvent('HTMLEvents');
-            //     this.event.initEvent(eve, false, false);
-            //     if (!document["evetself" + eve]) {
-            //         document["evetself" + eve] = this.event;
-            //     }
-            // } else {
-            //     return false;
-            // }
-            // return document["evetself" + eve];
-            var event = document.createEvent("CustomEvent");
-            event.initCustomEvent(eve, false, false, 1);
-            return event;
-        };
-    }
     function jbDetailDisplay(src) {
         //        var page2_jiangbei = require('../img/jb_left1.png');
-        $("#jbdetail").show();
         $("#jbdetail #jb").attr('src', src);
+        $("#jbdetail").show();
     }
     function jbDetailClose() {
         $("#jbdetail").hide();
@@ -10996,7 +11106,116 @@ function rotate() {
 }
 
 /***/ }),
-/* 8 */
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _huadong = __webpack_require__(5);
+
+exports.default = rotateshoe;
+
+function rotateshoe() {
+    var texts = ["2003 NIKE ZOOM GENERATION", "2003 NIKE ZOOM GENERATION 2", "2003 NIKE ZOOM GENERATION 3", "2003 NIKE ZOOM GENERATION 4", "2003 NIKE ZOOM GENERATION 5", "2003 NIKE ZOOM GENERATION 6", "2003 NIKE ZOOM GENERATION 7", "2003 NIKE ZOOM GENERATION 8", "2003 NIKE ZOOM GENERATION 9", "2003 NIKE ZOOM GENERATION0 10", "2003 NIKE ZOOM GENERATION 11", "2003 NIKE ZOOM GENERATION 12", "2003 NIKE ZOOM GENERATION 13", "2003 NIKE ZOOM GENERATION 14"];
+    var positions = [];
+    var page3_shoe1 = __webpack_require__(20);
+    var page3_shoe_left1 = __webpack_require__(8);
+    var page3_shoe_left2 = __webpack_require__(9);
+    var page3_shoe_left3 = __webpack_require__(10);
+    var page3_shoe_left4 = __webpack_require__(11);
+    var page3_shoe_left5 = __webpack_require__(12);
+    var page3_shoe_left6 = __webpack_require__(13);
+    var page3_shoe_right6 = __webpack_require__(19);
+    var page3_shoe_right5 = __webpack_require__(18);
+    var page3_shoe_right4 = __webpack_require__(17);
+    var page3_shoe_right3 = __webpack_require__(16);
+    var page3_shoe_right2 = __webpack_require__(15);
+    var page3_shoe_right1 = __webpack_require__(14);
+    var page3_shoe14 = __webpack_require__(21);
+    var srcs = [[page3_shoe1, "NIKE AIR ZOOM GENERATION 2003", "NIKE为勒布朗詹姆斯打造的第一款签名鞋，设计灵感来自于他的悍马H2，由此开启了LEBRON系列"], [page3_shoe_left1, 222, "detailtext"], [page3_shoe_left2, 333, "detailtext"], [page3_shoe_left3, 444, "detailtext"], [page3_shoe_left4, 555, "detailtext"], [page3_shoe_left5, 666, "detailtext"], [page3_shoe_left6, 777, "detailtext"], [page3_shoe14, 500, "detailtext"], [page3_shoe_right6, 888, "detailtext"], [page3_shoe_right5, 999, "detailtext"], [page3_shoe_right4, 100, "detailtext"], [page3_shoe_right3, 200, "detailtext"], [page3_shoe_right2, 300, "detailtext"], [page3_shoe_right1, 400, "detailtext"]];
+    var $bDiv = $('.h5_page_page3 .h5_component:lt(14)');
+    $bDiv.each(function (i) {
+
+        positions.push([$(this).width(), $(this).height(), $(this).css('left'), $(this).css('top'), $(this).css('zIndex')]);
+        $(this).on('click', function () {
+            shoeDetailDisplay(srcs[i][0]);
+            $("#shoetext .shoetitle:first").text(srcs[i][1]);
+            $('#shoetext .shoecontent:first').text(srcs[i][2]);
+        });
+    });
+    $("#shoehome").on('click', function () {
+        shoeDetailClose();
+        $.fn.fullpage.moveTo(2);
+    });
+    $("#shoeback").on('click', function () {
+        shoeDetailClose();
+    });
+    var dom = $('.h5_page_page3').get(0);
+    (0, _huadong.mobilwmtouch)(dom);
+    dom.addEventListener('touright', function (e) {
+        animaRight1();
+        return false;
+    });
+
+    dom.addEventListener('touleft', function (e) {
+        animaLeft1();
+        return false;
+    });
+
+    function animaRight1() {
+        if ($(".h5_page_page3 :animated").length <= 0) {
+            var last = positions.pop();
+            positions.unshift(last);
+
+            var lastText = texts.pop();
+            texts.unshift(lastText);
+            $(".h5_page_page3 .h5_component_name_text:first").text(texts[0]);
+            // console.log($(".h5_page_page2 .h5_component_name_text:first").text);
+            $bDiv.each(function (i) {
+                $(this).animate({
+                    width: positions[i][0],
+                    height: positions[i][1],
+                    left: positions[i][2],
+                    top: positions[i][3],
+                    zIndex: positions[i][4]
+                }, 600, 'linear');
+            });
+        }
+    }
+    function animaLeft1() {
+        if ($(".h5_page_page3 :animated").length <= 0) {
+            var first = positions.shift();
+            positions.push(first);
+            var firstText = texts.shift();
+            texts.push(firstText);
+            $(".h5_page_page3 .h5_component_name_text:first").text(texts[0]);
+            $bDiv.each(function (i) {
+                $(this).animate({
+                    width: positions[i][0],
+                    height: positions[i][1],
+                    left: positions[i][2],
+                    top: positions[i][3],
+                    zIndex: positions[i][4]
+                }, 600, 'linear');
+            });
+        }
+    }
+    function shoeDetailDisplay(srcs) {
+        $("#shoedetail #shoedisplay").attr('src', srcs);
+        $("#shoedetail").show();
+    }
+    function shoeDetailClose() {
+        $("#shoedetail").hide();
+    }
+}
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11018,7 +11237,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 	if ( true ) {
 
 		// AMD. Register as an anonymous module.
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(3), __webpack_require__(33) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(3), __webpack_require__(54) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -11738,13 +11957,13 @@ return $.widget;
 
 
 /***/ }),
-/* 9 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(25);
+var content = __webpack_require__(44);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11764,13 +11983,39 @@ if(false) {
 }
 
 /***/ }),
-/* 10 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(26);
+var content = __webpack_require__(45);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/postcss-loader/index.js!../../../node_modules/less-loader/dist/index.js!./shoedetail.less", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/postcss-loader/index.js!../../../node_modules/less-loader/dist/index.js!./shoedetail.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(46);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11790,13 +12035,13 @@ if(false) {
 }
 
 /***/ }),
-/* 11 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(27);
+var content = __webpack_require__(47);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11816,13 +12061,13 @@ if(false) {
 }
 
 /***/ }),
-/* 12 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(28);
+var content = __webpack_require__(48);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11842,13 +12087,39 @@ if(false) {
 }
 
 /***/ }),
-/* 13 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(29);
+var content = __webpack_require__(49);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./page3.less", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/index.js!../../../../node_modules/less-loader/dist/index.js!./page3.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(50);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11868,13 +12139,13 @@ if(false) {
 }
 
 /***/ }),
-/* 14 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(30);
+var content = __webpack_require__(51);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11894,13 +12165,13 @@ if(false) {
 }
 
 /***/ }),
-/* 15 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(31);
+var content = __webpack_require__(52);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(2)(content, {});
@@ -11920,75 +12191,83 @@ if(false) {
 }
 
 /***/ }),
-/* 16 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/af2dacde.face.png";
 
 /***/ }),
-/* 17 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/ea85b447.face_in.png";
 
 /***/ }),
-/* 18 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/fba9f79d.guiji.png";
 
 /***/ }),
-/* 19 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/d8d397a5.huangguan.png";
 
 /***/ }),
-/* 20 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/f906e7b9.jiangbei.png";
 
 /***/ }),
-/* 21 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/6a5abd0b.xiezi.png";
 
 /***/ }),
-/* 22 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/bb2c089a.yiner.png";
 
 /***/ }),
-/* 23 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery_ui___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery_ui__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__src_common_style_H5_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__src_common_style_base_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__src_common_style_H5ComponentBase_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_common_style_detail_less__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_common_style_detail_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__src_common_style_detail_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_components_face_style_face_less__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_components_face_style_face_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__src_components_face_style_face_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_components_page_1_style_page1_less__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_components_page_1_style_page1_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__src_components_page_1_style_page1_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_components_page_2_style_page2_less__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_components_page_2_style_page2_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__src_components_page_2_style_page2_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_common_js_huadong_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_common_js_huadong_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__src_common_js_huadong_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_common_style_detail_less__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_common_style_detail_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__src_common_style_detail_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_common_style_shoedetail_less__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src_common_style_shoedetail_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__src_common_style_shoedetail_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_components_face_style_face_less__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src_components_face_style_face_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__src_components_face_style_face_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_components_page_1_style_page1_less__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_components_page_1_style_page1_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__src_components_page_1_style_page1_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_components_page_2_style_page2_less__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__src_components_page_2_style_page2_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__src_components_page_2_style_page2_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_components_page_3_style_page3_less__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__src_components_page_3_style_page3_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__src_components_page_3_style_page3_less__);
 /**
  * Created by 文利 on 2017/4/26.
  */
@@ -12003,20 +12282,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+
+
 window.jQuery = window.$ = __webpack_require__(3);
 
 
 
 
-__WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
-    var face0 = __webpack_require__(16);
-    var face1 = __webpack_require__(17);
 
-    var page1_guiji = __webpack_require__(18);
-    var page1_xiezi = __webpack_require__(21);
-    var page1_yiner = __webpack_require__(22);
-    var page1_jiangbei = __webpack_require__(20);
-    var page1_huangguan = __webpack_require__(19);
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
+    var face0 = __webpack_require__(35);
+    var face1 = __webpack_require__(36);
+
+    var page1_guiji = __webpack_require__(37);
+    var page1_xiezi = __webpack_require__(40);
+    var page1_yiner = __webpack_require__(41);
+    var page1_jiangbei = __webpack_require__(39);
+    var page1_huangguan = __webpack_require__(38);
     var page2_jiangbei = __webpack_require__(0);
     var page2_jb_left1 = __webpack_require__(0);
     var page2_jb_left2 = __webpack_require__(0);
@@ -12030,7 +12313,24 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
     var page2_jb_right3 = __webpack_require__(0);
     var page2_jb_right2 = __webpack_require__(0);
     var page2_jb_right1 = __webpack_require__(0);
-    var home = __webpack_require__(5);
+
+    var page3_shoe1 = __webpack_require__(20);
+    var page3_shoe_left1 = __webpack_require__(8);
+    var page3_shoe_left2 = __webpack_require__(9);
+    var page3_shoe_left3 = __webpack_require__(10);
+    var page3_shoe_left4 = __webpack_require__(11);
+    var page3_shoe_left5 = __webpack_require__(12);
+    var page3_shoe_left6 = __webpack_require__(13);
+    var page3_shoe_right6 = __webpack_require__(19);
+    var page3_shoe_right5 = __webpack_require__(18);
+    var page3_shoe_right4 = __webpack_require__(17);
+    var page3_shoe_right3 = __webpack_require__(16);
+    var page3_shoe_right2 = __webpack_require__(15);
+    var page3_shoe_right1 = __webpack_require__(14);
+    var page3_shoe14 = __webpack_require__(21);
+
+    var home = __webpack_require__(6);
+    var back = __webpack_require__(7);
     var h5 = new __WEBPACK_IMPORTED_MODULE_2__src_common_js_H5_js___default.a;
     h5
         .addPage('face')
@@ -12051,7 +12351,10 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     width:'24rem',
                     height: '5rem'
                 },
-                bg: face1
+                bg: face1,
+                onclick:function () {
+                    __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2);
+                }
             })
         .addPage('page1')
             .addComponent('guiji',{
@@ -12077,7 +12380,10 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     height: '23rem',
                 },
                 animateIn:{opacity:1,top: '42%', right: '0%',},
-                animateOut: {opacity:0,top: '42%', right: '0%',}
+                animateOut: {opacity:0,top: '42%', right: '0%',},
+                onclick:function () {
+                    __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(4);
+                }
              })
             // .addComponent('empty',{
             //     width: '137',
@@ -12139,6 +12445,17 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                 animateIn:{opacity:1, top: '30%'},
                 animateOut: {opacity:0, top: '18%'},
 
+            })
+            .addComponent('text',{
+                text: 'LBJ宇宙开启皇帝专属旅程',
+                css: {
+                    fontSize: '2rem',
+                    position: 'absolute',
+                    color: '#ffffff',
+                    //textAlign: 'center',
+                    left:'19%',
+                    bottom: '10%'
+                }
             })
         .addPage('page2')
             .addComponent('zhongjian',{
@@ -12323,15 +12640,251 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                     __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2);
                 }
             })
-    .loader(3);
+            /*.addComponent('back',{
+                bg: back,
+                css: {
+                    margin: '0 auto',
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '2%',
+                    left:'2%',
+                    width: '7.6rem',
+                    height: '1.9rem'
+                },
+                onclick:function () {
+                    $.fn.fullpage.moveTo(2);
+                }
+            })*/
+
+            /* page3 */
+        .addPage('page3')
+            .addComponent('shoe1',{
+                bg: page3_shoe1,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '42%',
+                    left: '21%',
+                    // marginLeft: '-48px',
+                    zIndex: '100',
+                    width: '19.1rem',
+                    height: '13rem',
+                }                
+            })
+            .addComponent('shoezuo1',{
+                bg: page3_shoe_left1,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '39%',
+                    left: '7%',
+                    zIndex: '95',
+                    width: '17.2rem',
+                    height: '16.7rem',
+                },
+                
+                
+            })
+            .addComponent('shoezuo2',{
+                bg: page3_shoe_left2,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '36%',
+                    left: '1%',
+                    zIndex: '90',
+                    width: '19.1rem',
+                    height: '9.95rem',
+                }
+            })
+          .addComponent('shoezuo3',{
+                bg: page3_shoe_left3,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '33%',
+                    left: '-3%',
+                    zIndex: '85',
+                    width: '16.8rem',
+                    height: '8rem',
+                }
+            })
+            .addComponent('shoezuo4',{
+                bg: page3_shoe_left4,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '30%',
+                    left: '-1%',
+                    zIndex: '80',
+                    width: '9.5rem',
+                    height: '6.45rem',
+                }
+            })
+            .addComponent('shoezuo5',{
+                bg: page3_shoe_left5,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '27%',
+                    left: '8%',
+                    zIndex: '75',
+                    width: '7.95rem',
+                    height: '5.4rem',
+                }
+                
+            })
+            .addComponent('shoezuo6',{
+                bg: page3_shoe_left6,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '25%',
+                    left: '22%',
+                    zIndex: '70',
+                    width: '7.15rem',
+                    height: '4.85rem',
+                }
+                
+            })
+            .addComponent('shoehou',{
+                bg: page3_shoe14,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '24%',
+                    left: '38%',
+                    zIndex: '65',
+                    width: '6.7rem',
+                    height: '4.5rem',
+                }
+            })
+          .addComponent('shoeyou6',{
+                bg: page3_shoe_right6,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '24%',
+                    left: '50%',
+                    zIndex: '70',
+                    width: '7.15rem',
+                    height: '4.85rem',
+                }
+            })
+         .addComponent('shoeyou5',{
+                bg: page3_shoe_right5,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '25%',
+                    left: '60%',
+                    zIndex: '75',
+                    width: '7.95rem',
+                    height: '5.4rem',
+                },                               
+            })
+            .addComponent('shoeyou4',{
+                bg: page3_shoe_right4,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '27%',
+                    left: '66%',
+                    zIndex: '80',
+                    width: '9.45rem',
+                    height: '6.45rem',
+                }
+            })
+            .addComponent('shoeyou3',{
+                bg: page3_shoe_right3,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '30%',
+                    left: '65%',
+                    zIndex: '85',
+                    width: '11.75rem',
+                    height: '8rem',
+                }
+            })
+            .addComponent('shoeyou2',{
+                bg: page3_shoe_right2,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '33%',
+                    left: '57.5%',
+                    zIndex: '90',
+                    width: '19.1rem',
+                    height: '9.95rem',
+                }
+            })
+            .addComponent('shoeyou1',{
+                bg: page3_shoe_right1,
+                css: {
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '38%',
+                    left: '47%',
+                    zIndex: '95',
+                    width: '17.2rem',
+                    height: '16.7rem',
+                }
+            })
+            
+            .addComponent('text',{
+                text: '2003 NIKE ZOOM GENERATION',
+                css: {
+                    fontSize: '3.2em',
+                    position: 'relative',
+                    color: 'white',
+                    textAlign: 'center',
+                    top: '73%'
+                }
+            })
+            
+            /*.addComponent('back',{
+                bg: back,
+                css: {
+                    margin: '0 auto',
+                    backgroundSize: 'contain',
+                    position: 'absolute',
+                    top: '2%',
+                    left:'2%',
+                    width: '7.6rem',
+                    height: '1.9rem'
+                },
+                onclick:function () {
+                    $.fn.fullpage.moveTo(2);
+                }
+            })*/
+            .addComponent('home',{
+                bg: home,                
+                css: {
+                    position: 'absolute',
+                    backgroundSize: 'contain',
+                    height: '4.6rem',
+                    width: '4.6rem',
+                    marginLeft: '-2.3rem',
+                    left: '50%',
+                    bottom:'5%'
+                },
+                onclick : function(){
+                         __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
+                    }
+            })
+
+    .loader(4);
     __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js___default()();
+    __WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js___default()();
+    
 
 });
 
 
 
 /***/ }),
-/* 24 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12390,7 +12943,7 @@ function H5ComponentBase(name, cfg) {
 }
 
 /***/ }),
-/* 25 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -12398,13 +12951,27 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "#jbdetail {\n  position: fixed;\n  display: none;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  z-index: 999;\n}\n#jbdetail #jb {\n  position: absolute;\n  width: 15.7rem;\n  height: 28.3rem;\n  top: 50%;\n  left: 50%;\n  margin: -17rem 0 0 -7.8rem;\n}\n#jbdetail #back {\n  position: absolute;\n  width: 4.6rem;\n  height: 4.6rem;\n  background-size: contain;\n  margin-left: -2.3rem;\n  left: 50%;\n  bottom: 5%;\n  background-image: url(" + __webpack_require__(5) + ");\n}\n#jbdetail #desc {\n  position: absolute;\n  width: 100%;\n  bottom: 21%;\n}\n#jbdetail #desc .title {\n  font-size: 2.5rem;\n  text-align: center;\n  padding: 0 5rem;\n  line-height: 3.5rem;\n}\n#jbdetail #desc .content {\n  font-size: 1.5rem;\n  padding: 0 3rem;\n  line-height: 2rem;\n}\n", ""]);
+exports.push([module.i, "#jbdetail {\n  position: fixed;\n  display: none;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  z-index: 999;\n}\n#jbdetail #jb {\n  position: absolute;\n  width: 15.7rem;\n  height: 28.3rem;\n  top: 50%;\n  left: 50%;\n  margin: -17rem 0 0 -7.8rem;\n}\n#jbdetail #home {\n  position: absolute;\n  width: 4.6rem;\n  height: 4.6rem;\n  background-size: contain;\n  margin-left: -2.3rem;\n  left: 50%;\n  bottom: 5%;\n  background-image: url(" + __webpack_require__(6) + ");\n}\n#jbdetail #back {\n  position: absolute;\n  width: 7.6rem;\n  height: 1.9rem;\n  background-size: contain;\n  margin: 0 auto;\n  top: 2%;\n  left: 2%;\n  background-image: url(" + __webpack_require__(7) + ");\n}\n#jbdetail #desc {\n  position: absolute;\n  width: 100%;\n  bottom: 21%;\n  -webkit-animation: fadeInUp 1s ease 1 both;\n          animation: fadeInUp 1s ease 1 both;\n}\n#jbdetail #desc .title {\n  font-size: 2.5rem;\n  text-align: center;\n  padding: 0 5rem;\n  line-height: 3.5rem;\n}\n#jbdetail #desc .content {\n  font-size: 1.5rem;\n  padding: 0 3rem;\n  line-height: 2rem;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 26 */
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "#shoedetail {\n  position: fixed;\n  display: none;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  z-index: 999;\n}\n#shoedetail #shoedisplay {\n  position: absolute;\n  -webkit-transform: rotate(-30deg);\n      -ms-transform: rotate(-30deg);\n          transform: rotate(-30deg);\n  width: 30rem;\n  height: 20.4rem;\n  top: 51%;\n  left: 26%;\n  margin: -17rem 0 0 -7.8rem;\n}\n#shoedetail #shoehome {\n  position: absolute;\n  width: 4.6rem;\n  height: 4.6rem;\n  background-size: contain;\n  margin-left: -2.3rem;\n  left: 50%;\n  bottom: 5%;\n  background-image: url(" + __webpack_require__(6) + ");\n}\n#shoedetail #shoeback {\n  position: absolute;\n  width: 7.6rem;\n  height: 1.9rem;\n  background-size: contain;\n  margin: 0 auto;\n  top: 2%;\n  left: 2%;\n  background-image: url(" + __webpack_require__(7) + ");\n}\n#shoedetail #shoetext {\n  position: absolute;\n  width: 100%;\n  bottom: 20%;\n  -webkit-animation: fadeInUp 1s ease 1 both;\n          animation: fadeInUp 1s ease 1 both;\n}\n#shoedetail #shoetext .shoetitle {\n  font-size: 2.3rem;\n  font-family: Arial;\n  text-align: center;\n  padding: 0 5rem;\n  line-height: 3.5rem;\n}\n#shoedetail #shoetext .shoecontent {\n  font-size: 1.6rem;\n  font-family: 黑体;\n  padding: 0 3rem;\n  line-height: 2rem;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -12418,7 +12985,7 @@ exports.push([module.i, ".h5_page_face {\n  background-color: #454545;\n}\n", ""
 
 
 /***/ }),
-/* 27 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -12432,7 +12999,7 @@ exports.push([module.i, ".h5_page_page1 {\n  background-image: url(" + __webpack
 
 
 /***/ }),
-/* 28 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -12440,13 +13007,27 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, ".h5_page_page2 {\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n}\n", ""]);
+exports.push([module.i, ".h5_page_page2 {\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n}\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 29 */
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".h5_page_page3 {\n  background-image: url(" + __webpack_require__(4) + ");\n  background-size: cover;\n}\n@-webkit-keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n@keyframes fadeInUp {\n  0% {\n    opacity: 0;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: translateY(0);\n            transform: translateY(0);\n  }\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -12460,7 +13041,7 @@ exports.push([module.i, "/* H5对象的全局样式 */\nbody{\n    padding: 0;\n
 
 
 /***/ }),
-/* 30 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -12468,13 +13049,13 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "/* 基本图文组件样式 */\n.h5_component{\n    background-size: 100%;\n    background-repeat: no-repeat;\n    position: relative;\n}", ""]);
+exports.push([module.i, "/* 基本图文组件样式 */\n.h5_component{\n    background-size: 100%;\n    background-repeat: no-repeat;\n    position: relative;\n    font-family: Arial,黑体;\n}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 31 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(undefined);
@@ -12488,7 +13069,7 @@ exports.push([module.i, "body,html {\r\n    font-family: 'PingFang SC', 'STHeiti
 
 
 /***/ }),
-/* 32 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -15620,7 +16201,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 33 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;( function( factory ) {
@@ -15646,7 +16227,7 @@ return $.ui.version = "1.12.1";
 
 
 /***/ }),
-/* 34 */
+/* 55 */
 /***/ (function(module, exports) {
 
 
