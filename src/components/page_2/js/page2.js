@@ -2,7 +2,8 @@
  * Created by 文利 on 2017/5/4.
  */
 export default rotate;
-import {mobilwmtouch,evenzc} from "../../../common/js/huadong.js";
+import {animaRight,animaLeft} from "../../../common/js/animaLR";
+import {mobilwmtouch} from "../../../common/js/huadong.js";
 function rotate() {
     const text = [
         "2015-2016赛季NBA总冠军1","2015-2016赛季NBA总冠军2","2015-2016赛季NBA总冠军3",
@@ -56,64 +57,21 @@ function rotate() {
     $("#back").on('click',function () {
         jbDetailClose();
     });
-//    $('.h5_page_page2').click(anima);
     var dom = $('.h5_page_page2').get(0);
     mobilwmtouch(dom);
     dom.addEventListener('touright',function (e) {
-        animaRight();
+        animaRight($aDiv,'.h5_page_page2',text,position);
         return false;
     });
     dom.addEventListener('touleft',function (e) {
-        animaLeft();
+        animaLeft($aDiv,'.h5_page_page2',text,position);
         return false;
     });
-
-    function animaRight() {
-        if($(".h5_page_page2 :animated").length <= 0) {
-            let last = position.pop();
-            position.unshift(last);
-
-            let lastText = text.pop();
-            text.unshift(lastText);
-            $(".h5_page_page2 .h5_component_name_text:first").text(text[0]);
-            // console.log($(".h5_page_page2 .h5_component_name_text:first").text);
-            $aDiv.each(function (i) {
-                $(this).animate({
-                    width: position[i][0],
-                    height: position[i][1],
-                    left: position[i][2],
-                    top: position[i][3],
-                    zIndex: position[i][4]
-                }, 600, 'linear')
-            });
-        }
-    }
-    function animaLeft() {
-        if($(".h5_page_page2 :animated").length <= 0) {
-            let first = position.shift();
-            position.push(first);
-            let firstText = text.shift();
-            text.push(firstText);
-            $(".h5_page_page2 .h5_component_name_text:first").text(text[0]);
-            $aDiv.each(function (i) {
-                $(this).animate({
-                    width: position[i][0],
-                    height: position[i][1],
-                    left: position[i][2],
-                    top: position[i][3],
-                    zIndex: position[i][4]
-                }, 600, 'linear')
-            });
-        }
-    }
-    
-    function jbDetailDisplay(src){
-//        var page2_jiangbei = require('../img/jb_left1.png');
-        $("#jbdetail #jb").attr('src',src);
-        $("#jbdetail").show();
-    }
-    function jbDetailClose(){
-        $("#jbdetail").hide();
-    }
-
+}
+function jbDetailDisplay(src){
+    $("#jbdetail #jb").attr('src',src);
+    $("#jbdetail").show();
+}
+function jbDetailClose(){
+    $("#jbdetail").hide();
 }

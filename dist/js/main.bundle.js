@@ -10714,7 +10714,7 @@ return jQuery;
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/cfc92ab3.bg.png";
+module.exports = __webpack_require__.p + "img/7bc0b366.bg.png";
 
 /***/ }),
 /* 5 */
@@ -10783,7 +10783,7 @@ function evenzc(eve) {
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/2cdfb924.home.png";
+module.exports = __webpack_require__.p + "img/8b8bad85.home.png";
 
 /***/ }),
 /* 7 */
@@ -12194,13 +12194,13 @@ if(false) {
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/af2dacde.face.png";
+module.exports = __webpack_require__.p + "img/9f3e8362.face.png";
 
 /***/ }),
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/ea85b447.face_in.png";
+module.exports = __webpack_require__.p + "img/12c34051.face_in.png";
 
 /***/ }),
 /* 37 */
@@ -12212,7 +12212,7 @@ module.exports = __webpack_require__.p + "img/fba9f79d.guiji.png";
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/d8d397a5.huangguan.png";
+module.exports = __webpack_require__.p + "img/a9225afd.huangguan.png";
 
 /***/ }),
 /* 39 */
@@ -12230,7 +12230,7 @@ module.exports = __webpack_require__.p + "img/6a5abd0b.xiezi.png";
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/bb2c089a.yiner.png";
+module.exports = __webpack_require__.p + "img/5d4cf3ed.yiner.png";
 
 /***/ }),
 /* 42 */
@@ -12873,11 +12873,9 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(function(){
                          __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.fn.fullpage.moveTo(2)
                     }
             })
-
     .loader(4);
     __WEBPACK_IMPORTED_MODULE_6__src_components_page_2_js_page2_js___default()();
     __WEBPACK_IMPORTED_MODULE_7__src_components_page_3_js_page3_js___default()();
-    
 
 });
 

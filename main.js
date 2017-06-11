@@ -1,8 +1,6 @@
 /**
  * Created by 文利 on 2017/4/26.
  */
-// import lunbo from './src/components/lunbo/lunbo.js';
-// import './src/components/lunbo/lunbo.less';
 import $ from 'jquery';
 import 'jquery-ui';
 import H5 from './src/common/js/H5.js';
@@ -14,7 +12,6 @@ import rotateshoe from './src/components/page_3/js/page3.js';
 import './src/common/js/huadong.js';
 import './src/common/style/detail.less';
 import './src/common/style/shoedetail.less';
-
 window.jQuery = window.$ = require('jquery');
 import './src/components/face/style/face.less';
 import './src/components/page_1/style/page1.less';
@@ -66,9 +63,11 @@ $(function(){
         .addPage('face')
             .addComponent('face',{
                 css: {
-                    margin: '0 auto',
+                    position: 'absolute',
                     backgroundSize:'contain',
-                    top: '6%',
+                    marginLeft: '-14rem',
+                    left: '50%',
+                    top: '13%',
                     width:'28rem',
                     height: '44rem'
                 },
@@ -76,10 +75,13 @@ $(function(){
             })
             .addComponent('go',{
                 css: {
-                    margin: '15% auto 0 auto',
+                    position: 'absolute',
                     backgroundSize:'contain',
+                    left: '50%',
                     width:'24rem',
-                    height: '5rem'
+                    marginLeft: '-12rem',
+                    height: '5rem',
+                    bottom: '13%'
                 },
                 bg: face1,
                 onclick:function () {
@@ -115,16 +117,6 @@ $(function(){
                     $.fn.fullpage.moveTo(4);
                 }
              })
-            // .addComponent('empty',{
-            //     width: '137',
-            //     height: '182',
-            //     css: {
-            //         position: 'absolute',
-            //         top: '25%',
-            //         right: '10%',
-            //         zIndex:'10'
-            //     },
-            // })
             .addComponent('yiner',{
                 bg: page1_yiner,
 
@@ -183,9 +175,13 @@ $(function(){
                     position: 'absolute',
                     color: '#ffffff',
                     //textAlign: 'center',
-                    left:'19%',
-                    bottom: '10%'
-                }
+                    width: '100%',
+                    textAlign: 'center',
+                    bottom: '0%',
+                    opacity:0
+                },
+                animateIn:{opacity:1, bottom: '10%'},
+                animateOut: {opacity:0, bottom: '0%'},
             })
         .addPage('page2')
             .addComponent('zhongjian',{
@@ -349,11 +345,15 @@ $(function(){
                 text: '2015-2016赛季NBA总冠军1',
                 css: {
                     fontSize: '2rem',
-                    position: 'relative',
+                    position: 'absolute',
                     color: '#ffffff',
+                    width: '100%',
                     textAlign: 'center',
-                    top: '78%'
-                }
+                    opacity:0,
+                    top: '90%'
+                },
+                animateIn:{opacity:1, top: '78%'},
+                animateOut: {opacity:0, top: '100%'},
             })
             .addComponent('home',{
                 bg: home,
@@ -370,23 +370,6 @@ $(function(){
                     $.fn.fullpage.moveTo(2);
                 }
             })
-            /*.addComponent('back',{
-                bg: back,
-                css: {
-                    margin: '0 auto',
-                    backgroundSize: 'contain',
-                    position: 'absolute',
-                    top: '2%',
-                    left:'2%',
-                    width: '7.6rem',
-                    height: '1.9rem'
-                },
-                onclick:function () {
-                    $.fn.fullpage.moveTo(2);
-                }
-            })*/
-
-            /* page3 */
         .addPage('page3')
             .addComponent('shoe1',{
                 bg: page3_shoe1,
@@ -395,7 +378,6 @@ $(function(){
                     position: 'absolute',
                     top: '42%',
                     left: '21%',
-                    // marginLeft: '-48px',
                     zIndex: '100',
                     width: '19.1rem',
                     height: '13rem',
@@ -566,28 +548,16 @@ $(function(){
                 text: '2003 NIKE ZOOM GENERATION',
                 css: {
                     fontSize: '3.2em',
-                    position: 'relative',
+                    position: 'absolute',
+                    width: '100%',
                     color: 'white',
                     textAlign: 'center',
-                    top: '73%'
-                }
-            })
-            
-            /*.addComponent('back',{
-                bg: back,
-                css: {
-                    margin: '0 auto',
-                    backgroundSize: 'contain',
-                    position: 'absolute',
-                    top: '2%',
-                    left:'2%',
-                    width: '7.6rem',
-                    height: '1.9rem'
+                    top: '90%',
+                    opacity:0
                 },
-                onclick:function () {
-                    $.fn.fullpage.moveTo(2);
-                }
-            })*/
+                animateIn:{opacity:1, top: '78%'},
+                animateOut: {opacity:0, top: '100%'},
+            })
             .addComponent('home',{
                 bg: home,                
                 css: {
