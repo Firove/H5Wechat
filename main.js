@@ -27,20 +27,12 @@ $(function(){
     var page1_yiner = require('./src/components/page_1/img/yiner.png');
     var page1_jiangbei = require('./src/components/page_1/img/jiangbei.png');
     var page1_huangguan = require('./src/components/page_1/img/huangguan.png');
-    var page2_jiangbei = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left1 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left2 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left3 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left4 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left5 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left6 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right6 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right5 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right4 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right3 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right2 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right1 = require('./src/components/page_2/img/jb_left1.png');
-
+    // var page2_jiangbei = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jiangbeiCenter = require('./src/components/page_2/img/jb2.png');
+    var page2_jb_left1 = require('./src/components/page_2/img/jb4.png');
+    var page2_jb_left2 = require('./src/components/page_2/img/jb1.png');
+//    var page2_jb_left3 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_left4 = require('./src/components/page_2/img/jb3.png');
     var page3_shoe1 = require('./src/components/page_3/img/shoe0.png');
     var page3_shoe_left1 = require('./src/components/page_3/img/shoe-left-1.png');
     var page3_shoe_left2 = require('./src/components/page_3/img/shoe-left-2.png');
@@ -158,7 +150,7 @@ $(function(){
                     backgroundSize:'100% 100%',
                     top: '18%',
                     left: '50%',
-                    marginLeft: '-110px',
+                    marginLeft: '-11rem',
                     zIndex:'3',
                     opacity: 0,
                     width: '22rem',
@@ -185,7 +177,7 @@ $(function(){
             })
         .addPage('page2')
             .addComponent('zhongjian',{
-                bg: page2_jiangbei,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -221,7 +213,7 @@ $(function(){
                 }
             })
             .addComponent('zuo3',{
-                bg: page2_jb_left3,
+                bg: page2_jb_left2,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -245,7 +237,7 @@ $(function(){
                 }
             })
             .addComponent('zuo5',{
-                bg: page2_jb_left5,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -257,7 +249,7 @@ $(function(){
                 }
             })
             .addComponent('zuo6',{
-                bg: page2_jb_left6,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -269,7 +261,7 @@ $(function(){
                 }
             })
             .addComponent('you6',{
-                bg: page2_jb_right6,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -281,7 +273,7 @@ $(function(){
                 },
             })
             .addComponent('you5',{
-                bg: page2_jb_right5,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -293,7 +285,7 @@ $(function(){
                 }
             })
             .addComponent('you4',{
-                bg: page2_jb_right4,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -306,7 +298,7 @@ $(function(){
 
             })
             .addComponent('you3',{
-                bg: page2_jb_right3,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -318,7 +310,7 @@ $(function(){
                 }
             })
             .addComponent('you2',{
-                bg: page2_jb_right2,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -330,7 +322,7 @@ $(function(){
                 }
             })
             .addComponent('you1',{
-                bg: page2_jb_right1,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -342,7 +334,7 @@ $(function(){
                 }
             })
             .addComponent('text',{
-                text: '2015-2016赛季NBA总冠军1',
+                text: '2015-16赛季NBA总决赛MVP',
                 css: {
                     fontSize: '2rem',
                     position: 'absolute',
@@ -546,7 +538,7 @@ $(function(){
             .addComponent('text',{
                 text: '2003 NIKE ZOOM GENERATION',
                 css: {
-                    fontSize: '3.2em',
+                    fontSize: '2rem',
                     position: 'absolute',
                     width: '100%',
                     color: 'white',

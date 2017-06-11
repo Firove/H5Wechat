@@ -5,9 +5,8 @@ export  function animaRight($aDiv,classStr,text,position) {
     if($(classStr+" :animated").length <= 0) {
         let last = position.pop();
         position.unshift(last);
-
-        let lastText = text.pop();
-        text.unshift(lastText);
+        let firstText = text.shift();
+        text.push(firstText);
         $(classStr+" .h5_component_name_text:first").text(text[0]);
         $aDiv.each(function (i) {
             $(this).animate({
@@ -24,8 +23,8 @@ export function animaLeft($aDiv,classStr,text,position) {
     if($(classStr+" :animated").length <= 0) {
         let first = position.shift();
         position.push(first);
-        let firstText = text.shift();
-        text.push(firstText);
+        let lastText = text.pop();
+        text.unshift(lastText);
         $(classStr+" .h5_component_name_text:first").text(text[0]);
         $aDiv.each(function (i) {
             $(this).animate({

@@ -4,3 +4,18 @@ body,html {
     letter-spacing: 2px;
     font-size: 62.5%;
 }
+@media screen and (min-device-height:700px) {
+    html, body {
+        font-size: 78%;
+    }
+}
+@media screen and (min-device-height:800px) {
+    html, body {
+        font-size: 130%;
+    }
+}
+@media screen and (max-device-height:570px) {
+    html, body {
+        font-size: 50%;
+    }
+}
