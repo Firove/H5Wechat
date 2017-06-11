@@ -27,34 +27,27 @@ $(function(){
     var page1_yiner = require('./src/components/page_1/img/yiner.png');
     var page1_jiangbei = require('./src/components/page_1/img/jiangbei.png');
     var page1_huangguan = require('./src/components/page_1/img/huangguan.png');
-    var page2_jiangbei = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left1 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left2 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left3 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left4 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left5 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_left6 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right6 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right5 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right4 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right3 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right2 = require('./src/components/page_2/img/jb_left1.png');
-    var page2_jb_right1 = require('./src/components/page_2/img/jb_left1.png');
-
-    var page3_shoe1 = require('./src/components/page_3/img/shoe0.png');
-    var page3_shoe_left1 = require('./src/components/page_3/img/shoe-left-1.png');
-    var page3_shoe_left2 = require('./src/components/page_3/img/shoe-left-2.png');
-    var page3_shoe_left3 = require('./src/components/page_3/img/shoe-left-3.png');
-    var page3_shoe_left4 = require('./src/components/page_3/img/shoe-left-4.png');
-    var page3_shoe_left5 = require('./src/components/page_3/img/shoe-left-5.png');
-    var page3_shoe_left6 = require('./src/components/page_3/img/shoe-left-6.png');
-    var page3_shoe_right6 = require('./src/components/page_3/img/shoe-right-6.png');
-    var page3_shoe_right5 = require('./src/components/page_3/img/shoe-right-5.png');
-    var page3_shoe_right4 = require('./src/components/page_3/img/shoe-right-4.png');
-    var page3_shoe_right3 = require('./src/components/page_3/img/shoe-right-3.png');
-    var page3_shoe_right2 = require('./src/components/page_3/img/shoe-right-2.png');
-    var page3_shoe_right1 = require('./src/components/page_3/img/shoe-right-1.png');
-    var page3_shoe14 = require('./src/components/page_3/img/shoe14.png');
+    // var page2_jiangbei = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jiangbeiCenter = require('./src/components/page_2/img/jb2.png');
+    var page2_jb_left1 = require('./src/components/page_2/img/jb4.png');
+    var page2_jb_left2 = require('./src/components/page_2/img/jb1.png');
+//    var page2_jb_left3 = require('./src/components/page_2/img/jb_left1.png');
+    var page2_jb_left4 = require('./src/components/page_2/img/jb3.png');
+    
+    var page3_shoeqian = require('./src/components/page_3/img/shoe1.png');
+    var page3_shoe_left1 = require('./src/components/page_3/img/shoe2.png');
+    var page3_shoe_left2 = require('./src/components/page_3/img/shoe3.png');
+    var page3_shoe_left3 = require('./src/components/page_3/img/shoe4.png');
+    var page3_shoe_left4 = require('./src/components/page_3/img/shoe5.png');
+    var page3_shoe_left5 = require('./src/components/page_3/img/shoe6.png');
+    var page3_shoe_left6 = require('./src/components/page_3/img/shoe7.png');
+    var page3_shoehou = require('./src/components/page_3/img/shoe8.png');
+    var page3_shoe_right6 = require('./src/components/page_3/img/shoe9.png');
+    var page3_shoe_right5 = require('./src/components/page_3/img/shoe10.png');
+    var page3_shoe_right4 = require('./src/components/page_3/img/shoe11.png');
+    var page3_shoe_right3 = require('./src/components/page_3/img/shoe12.png');
+    var page3_shoe_right2 = require('./src/components/page_3/img/shoe13.png');
+    var page3_shoe_right1 = require('./src/components/page_3/img/shoe14.png');
 
     var home = require('./src/components/page_2/img/home.png');
     var back = require('./src/components/page_3/img/back.png');
@@ -158,7 +151,7 @@ $(function(){
                     backgroundSize:'100% 100%',
                     top: '18%',
                     left: '50%',
-                    marginLeft: '-110px',
+                    marginLeft: '-11rem',
                     zIndex:'3',
                     opacity: 0,
                     width: '22rem',
@@ -185,7 +178,7 @@ $(function(){
             })
         .addPage('page2')
             .addComponent('zhongjian',{
-                bg: page2_jiangbei,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -221,7 +214,7 @@ $(function(){
                 }
             })
             .addComponent('zuo3',{
-                bg: page2_jb_left3,
+                bg: page2_jb_left2,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -245,7 +238,7 @@ $(function(){
                 }
             })
             .addComponent('zuo5',{
-                bg: page2_jb_left5,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -257,7 +250,7 @@ $(function(){
                 }
             })
             .addComponent('zuo6',{
-                bg: page2_jb_left6,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -269,7 +262,7 @@ $(function(){
                 }
             })
             .addComponent('you6',{
-                bg: page2_jb_right6,
+                bg: page2_jb_left4,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -281,7 +274,7 @@ $(function(){
                 },
             })
             .addComponent('you5',{
-                bg: page2_jb_right5,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -293,7 +286,7 @@ $(function(){
                 }
             })
             .addComponent('you4',{
-                bg: page2_jb_right4,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -306,7 +299,7 @@ $(function(){
 
             })
             .addComponent('you3',{
-                bg: page2_jb_right3,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -318,7 +311,7 @@ $(function(){
                 }
             })
             .addComponent('you2',{
-                bg: page2_jb_right2,
+                bg: page2_jiangbeiCenter,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -330,7 +323,7 @@ $(function(){
                 }
             })
             .addComponent('you1',{
-                bg: page2_jb_right1,
+                bg: page1_jiangbei,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -342,7 +335,7 @@ $(function(){
                 }
             })
             .addComponent('text',{
-                text: '2015-2016赛季NBA总冠军1',
+                text: '2015-16赛季NBA总决赛MVP',
                 css: {
                     fontSize: '2rem',
                     position: 'absolute',
@@ -372,11 +365,11 @@ $(function(){
             })
         .addPage('page3')
             .addComponent('shoe1',{
-                bg: page3_shoe1,
+                bg: page3_shoeqian,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '42%',
+                    top: '43%',
                     left: '21%',
                     zIndex: '100',
                     width: '19.1rem',
@@ -388,8 +381,8 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '39%',
-                    left: '7%',
+                    top: '40%',
+                    left: '8%',
                     zIndex: '95',
                     width: '17.2rem',
                     height: '16.7rem',
@@ -402,7 +395,7 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '36%',
+                    top: '37%',
                     left: '1%',
                     zIndex: '90',
                     width: '19.1rem',
@@ -414,8 +407,8 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '33%',
-                    left: '-3%',
+                    top: '34%',
+                    left: '0.1%',
                     zIndex: '85',
                     width: '16.8rem',
                     height: '8rem',
@@ -426,8 +419,8 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '30%',
-                    left: '-1%',
+                    top: '31%',
+                    left: '0.1%',
                     zIndex: '80',
                     width: '9.5rem',
                     height: '6.45rem',
@@ -438,8 +431,8 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '27%',
-                    left: '8%',
+                    top: '28%',
+                    left: '7%',
                     zIndex: '75',
                     width: '7.95rem',
                     height: '5.4rem',
@@ -452,7 +445,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '25%',
-                    left: '22%',
+                    left: '20%',
                     zIndex: '70',
                     width: '7.15rem',
                     height: '4.85rem',
@@ -460,7 +453,7 @@ $(function(){
                 
             })
             .addComponent('shoehou',{
-                bg: page3_shoe14,
+                bg: page3_shoehou,
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
@@ -500,7 +493,7 @@ $(function(){
                 css: {
                     backgroundSize: 'contain',
                     position: 'absolute',
-                    top: '27%',
+                    top: '26.5%',
                     left: '66%',
                     zIndex: '80',
                     width: '9.45rem',
@@ -513,7 +506,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '30%',
-                    left: '65%',
+                    left: '63%',
                     zIndex: '85',
                     width: '11.75rem',
                     height: '8rem',
@@ -525,7 +518,7 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '33%',
-                    left: '57.5%',
+                    left: '54.5%',
                     zIndex: '90',
                     width: '19.1rem',
                     height: '9.95rem',
@@ -537,24 +530,25 @@ $(function(){
                     backgroundSize: 'contain',
                     position: 'absolute',
                     top: '38%',
-                    left: '47%',
+                    left: '45%',
                     zIndex: '95',
                     width: '17.2rem',
                     height: '16.7rem',
                 }
             })
             .addComponent('text',{
-                text: '2003 NIKE ZOOM GENERATION',
+                text: '2003 NIKE AIR ZOOM GENERATION',
                 css: {
-                    fontSize: '3.2em',
+                    fontSize: '2rem',
                     position: 'absolute',
                     width: '100%',
                     color: 'white',
                     textAlign: 'center',
-                    top: '90%',
+                    //padding:'0 1rem',
+                    top: '75%',
                     opacity:0
                 },
-                animateIn:{opacity:1, top: '78%'},
+                animateIn:{opacity:1, top: '75%'},
                 animateOut: {opacity:0, top: '100%'},
             })
             .addComponent('home',{
