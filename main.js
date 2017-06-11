@@ -543,7 +543,6 @@ $(function(){
                     height: '16.7rem',
                 }
             })
-            
             .addComponent('text',{
                 text: '2003 NIKE ZOOM GENERATION',
                 css: {
